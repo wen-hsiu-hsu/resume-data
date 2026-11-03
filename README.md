@@ -4,9 +4,9 @@
 
 | 檔案 | 網址 |
 |---|---|
-| 英文履歷 | https://wen-hsiu-hsu.github.io/resume-data/data/resume_en.json |
-| 中文履歷 | https://wen-hsiu-hsu.github.io/resume-data/data/resume_zh_TW.json |
-| 技能 icon 對應 | https://wen-hsiu-hsu.github.io/resume-data/data/icon.json |
+| 英文履歷 | https://d.resume.hsiu.soy/data/resume_en.json |
+| 中文履歷 | https://d.resume.hsiu.soy/data/resume_zh_TW.json |
+| 技能 icon 對應 | https://d.resume.hsiu.soy/data/icon.json |
 
 ## 其他內容
 
