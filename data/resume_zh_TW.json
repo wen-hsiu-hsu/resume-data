@@ -1,0 +1,248 @@
+{
+  "basics":{
+    "name":"許文修",
+    "label":"前端工程師",
+    "image":"",
+    "email":"kevin.hsu.hws@gmail.com",
+    "phone":"",
+    "url":"https://resume.hsiu.soy",
+    "summary":"專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
+    "location":{
+      "city":"新北市",
+      "region":"",
+      "postalCode":"",
+      "countryCode":"台灣",
+      "address":""
+    },
+    "profiles":[
+      {
+        "network":"github",
+        "username":"wen-hsiu-hsu",
+        "url":"https://github.com/wen-hsiu-hsu"
+      },
+      {
+        "network":"linkedin",
+        "username":"kevin-hws",
+        "url":"https://www.linkedin.com/in/kevin-hws"
+      },
+      {
+        "network":"threads",
+        "username":"hsiu.soy",
+        "url":"https://www.threads.net/@hsiu.soy",
+        "hidden":true
+      }
+    ]
+  },
+  "work":[
+    {
+      "name":"聯合報股份有限公司",
+      "position":"前端工程師",
+      "url":"",
+      "startDate":"2022-03",
+      "endDate":"2026-03",
+      "summary":"負責線上課程平台前端開發，獨立完成「U 好學」並主導「一刻鯨選」前端架構。",
+      "highlights":[
+        "獨立完成「U 好學」前端開發並於 2026 年 1 月上線，以 Nuxt.js 實作課程試聽／試看與購物車結帳功能",
+        "主導「一刻鯨選」前端架構，打造類電商課程銷售功能",
+        "封裝影音播放器插件以提升產品擴展性",
+        "重構並優化程式碼使載入速度提升約 3～5 倍",
+        "主導 Webpack 遷移至 Vite，並將專案從 Vue 2 升級至 Vue 3",
+        "導入 Tailwind CSS 提升開發效率與程式碼維護性"
+      ]
+    },
+    {
+      "name":"讓狂人飛教育股份有限公司",
+      "position":"網頁前端",
+      "url":"",
+      "startDate":"2021-09",
+      "endDate":"2021-12",
+      "summary":"以 Nuxt 重構 Joberfly 網站，模組化元件並導入 Tailwind CSS，開發新版首頁與履歷頁面。",
+      "highlights":[
+        "重構 Joberfly 網站程式碼並模組化元件",
+        "導入 Tailwind CSS 開發全新首頁",
+        "建立履歷頁面並實現響應式設計"
+      ]
+    },
+    {
+      "name":"佳音事業股份有限公司",
+      "position":"網頁設計師",
+      "url":"",
+      "startDate":"2020-03",
+      "endDate":"2021-08",
+      "summary":"製作活動網頁與後台 CMS，並以 Vue.js 參與部分專案開發；負責切版、動畫與 UI/UX 優化，與團隊協作串接 API，並以 Git flow 管理版本。",
+      "highlights":[
+        "製作活動網頁與撰寫 CMS",
+        "實現前端切版動畫與 UI/UX 設計優化",
+        "協作進行 API 串接與 Git flow 管理"
+      ]
+    },
+    {
+      "name":"原聚股份有限公司",
+      "position":"平面設計師",
+      "url":"",
+      "startDate":"2019-01",
+      "endDate":"2019-06",
+      "summary":"負責品牌手冊、店面視覺與廣宣素材設計，並管理設計外包、協助店面與數位行銷活動。",
+      "highlights":[
+        "設計品牌手冊及店面視覺設定",
+        "管理廣宣素材與設計外包",
+        "協助店面行銷活動與數位行銷管理"
+      ]
+    }
+  ],
+  "volunteer":[
+    
+  ],
+  "education":[
+    {
+      "institution":"東海大學",
+      "url":"",
+      "area":"工業設計",
+      "studyType":"學士",
+      "startDate":"2013",
+      "endDate":"2017",
+      "score":"",
+      "courses":[
+        
+      ]
+    }
+  ],
+  "awards":[
+    
+  ],
+  "certificates":[
+    
+  ],
+  "publications":[
+    
+  ],
+  "skills":[
+    {
+      "name":"前端框架",
+      "level":"",
+      "keywords":[
+        "Vue",
+        "Nuxt",
+        "React"
+      ]
+    },
+    {
+      "name":"CSS 工具",
+      "level":"",
+      "keywords":[
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name":"工具與流程",
+      "level":"",
+      "keywords":[
+        "Vite",
+        "Webpack",
+        "Git",
+        "Git flow",
+        "GitHub flow"
+      ]
+    },
+    {
+      "name":"程式語言",
+      "level":"",
+      "keywords":[
+        "JavaScript",
+        "TypeScript",
+        "Python"
+      ]
+    },
+    {
+      "name":"設計工具",
+      "level":"",
+      "keywords":[
+        "Figma",
+        "Adobe XD",
+        "Adobe Photoshop",
+        "Adobe Illustrator"
+      ]
+    }
+  ],
+  "languages":[
+    {
+      "language":"中文",
+      "fluency":"母語"
+    },
+    {
+      "language":"English",
+      "fluency":"中等 / 日常對話"
+    }
+  ],
+  "interests":[
+    {
+      "name":"休閒",
+      "keywords":[
+        "鋼琴",
+        "羽毛球",
+        "攝影",
+        "看影集",
+        "旅遊"
+      ]
+    },
+    {
+      "name":"自我成長",
+      "keywords":[
+        "寫程式",
+        "語言學習",
+        "健身"
+      ]
+    }
+  ],
+  "references":[
+    
+  ],
+  "projects":[
+    {
+      "name":"Dobby - LINE Bot",
+      "startDate":"",
+      "endDate":"",
+      "description":"在 LINE 群組一鍵報名羽球的機器人。身為羽球社團主揪，原本以文字接龍報名，常有人打錯格式；Dobby 取代接龍，並沿用原本記帳用的 Notion 當資料庫，不需另外架設。",
+      "highlights":[
+        "LINE Flex Message",
+        "Express.js",
+        "TypeScript",
+        "Notion API"
+      ],
+      "url":"https://github.com/wen-hsiu-hsu/dobby"
+    },
+    {
+      "name":"最惱人的 Cookie Banner",
+      "startDate":"",
+      "endDate":"",
+      "description":"參與 Hackathon 社群活動時，以遊戲化設計提出最惱人的 Cookie Banner 方案，玩家必須在移動的杯子中尋找被蓋住的球，僅在成功遊戲後才能拒絕網站 Cookie。",
+      "highlights":[
+        "創新遊戲化設計",
+        "參與 Hackathon 競賽"
+      ],
+      "url":"https://github.com/wen-hsiu-hsu/annoying-cookie-banner"
+    },
+    {
+      "name":"個人部落格",
+      "startDate":"",
+      "endDate":"",
+      "description":"使用 VitePress 建構個人化主題，持續更新程式開發筆記與技術分享，記錄學習成長與技術見解。",
+      "highlights":[
+        "持續技術成長紀錄",
+        "定期技術分享"
+      ],
+      "url":"https://hsiu.soy"
+    },
+    {
+      "name":"攝影作品紀錄",
+      "startDate":"",
+      "endDate":"",
+      "description":"使用 Nuxt 搭配 Sveltia CMS，分享個人生活紀實攝影作品。",
+      "highlights":[
+        "業餘攝影作品紀錄"
+      ],
+      "url":"https://photography.hsiu.soy"
+    }
+  ]
+}

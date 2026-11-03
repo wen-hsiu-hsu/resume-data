@@ -1,0 +1,21 @@
+{
+    "Vue": "logos:vue",
+    "Nuxt": "logos:nuxt-icon",
+    "React": "logos:react",
+    "Tailwind CSS": "logos:tailwindcss-icon",
+    "Bootstrap": "logos:bootstrap",
+    "Bulma": "logos:bulma",
+    "Vite": "logos:vitejs",
+    "Webpack": "logos:webpack",
+    "Gulp": "logos:gulp",
+    "Git": "logos:git-icon",
+    "Git flow": "",
+    "Github flow": "",
+    "JavaScript": "logos:javascript",
+    "TypeScript": "logos:typescript-icon",
+    "Python": "logos:python",
+    "Figma": "logos:figma",
+    "Adobe XD": "logos:adobe-xd",
+    "Adobe Photoshop": "logos:adobe-photoshop",
+    "Adobe Illustrator": "logos:adobe-illustrator"
+}
