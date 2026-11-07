@@ -1,0 +1,462 @@
+{
+  "basics": {
+    "name": {
+      "zh": "許文修",
+      "en": "Wen-Hsiu Hsu"
+    },
+    "label": {
+      "zh": "前端工程師",
+      "en": "Frontend Engineer"
+    },
+    "image": "",
+    "email": "kevin.hsu.hws@gmail.com",
+    "phone": "",
+    "url": "https://resume.hsiu.soy",
+    "summary": {
+      "zh": "專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
+      "en": "Frontend Engineer specializing in Vue.js, Nuxt, and Tailwind CSS, with a background in industrial design and a strong eye for visual detail and user experience. Independently built the frontend of a course sales platform, led the upgrade from Vue 2 to Vue 3 and the migration from Webpack to Vite, and refactored code to make pages load about 3–5x faster. Recently, I've been building a personal homelab with Raspberry Pi and exploring workflow automation with n8n."
+    },
+    "location": {
+      "city": {
+        "zh": "新北市",
+        "en": "New Taipei City"
+      },
+      "region": "",
+      "postalCode": "",
+      "countryCode": {
+        "zh": "台灣",
+        "en": "Taiwan"
+      },
+      "address": ""
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "wen-hsiu-hsu",
+        "url": "https://github.com/wen-hsiu-hsu"
+      },
+      {
+        "network": "linkedin",
+        "username": "kevin-hws",
+        "url": "https://www.linkedin.com/in/kevin-hws"
+      },
+      {
+        "network": "threads",
+        "username": "hsiu.soy",
+        "url": "https://www.threads.net/@hsiu.soy",
+        "hidden": true
+      }
+    ],
+    "ext": {
+      "headline": {
+        "zh": "前端工程師｜Vue.js · Nuxt · Tailwind CSS｜工業設計背景",
+        "en": "Frontend Engineer | Vue.js · Nuxt · Tailwind CSS | Industrial design background"
+      }
+    }
+  },
+  "work": [
+    {
+      "name": {
+        "zh": "聯合報股份有限公司",
+        "en": "United Daily News Co., Ltd."
+      },
+      "position": {
+        "zh": "前端工程師",
+        "en": "Frontend Engineer"
+      },
+      "url": "",
+      "startDate": "2022-03",
+      "endDate": "2026-03",
+      "summary": {
+        "zh": "負責線上課程平台前端開發，獨立完成「U 好學」並主導「一刻鯨選」前端架構。",
+        "en": "Owned frontend development for online course platforms: built 'U Haoxue (U 好學)' solo and led the frontend architecture of 'Yike Jingxuan (一刻鯨選)'."
+      },
+      "highlights": [
+        {
+          "zh": "獨立完成「U 好學」前端開發並於 2026 年 1 月上線，以 Nuxt.js 實作課程試聽／試看與購物車結帳功能",
+          "en": "Sole frontend developer of 'U Haoxue (U 好學)', delivering course preview and checkout features with Nuxt.js; launched January 2026"
+        },
+        {
+          "zh": "主導「一刻鯨選」前端架構，打造類電商課程銷售功能",
+          "en": "Led frontend architecture of 'Yike Jingxuan (一刻鯨選)', building e-commerce-like course sales functionality"
+        },
+        {
+          "zh": "封裝影音播放器插件以提升產品擴展性",
+          "en": "Encapsulated a video player plugin to enhance product extensibility"
+        },
+        {
+          "zh": "重構並優化程式碼使載入速度提升約 3～5 倍",
+          "en": "Refactored and optimized code, cutting load times by roughly 3–5x"
+        },
+        {
+          "zh": "主導 Webpack 遷移至 Vite，並將專案從 Vue 2 升級至 Vue 3",
+          "en": "Led the migration from Webpack to Vite and the upgrade from Vue 2 to Vue 3"
+        },
+        {
+          "zh": "導入 Tailwind CSS 提升開發效率與程式碼維護性",
+          "en": "Integrated Tailwind CSS to enhance development efficiency and code maintainability"
+        }
+      ],
+      "ext": {
+        "skills": [
+          "Vue",
+          "Nuxt",
+          "Tailwind CSS",
+          "Vite",
+          "Webpack"
+        ]
+      }
+    },
+    {
+      "name": {
+        "zh": "讓狂人飛教育股份有限公司",
+        "en": "FlyingCrazyer Co., Ltd."
+      },
+      "position": {
+        "zh": "網頁前端",
+        "en": "Frontend Engineer"
+      },
+      "url": "",
+      "startDate": "2021-09",
+      "endDate": "2021-12",
+      "summary": {
+        "zh": "以 Nuxt 重構 Joberfly 網站，模組化元件並導入 Tailwind CSS，開發新版首頁與履歷頁面。",
+        "en": "Rebuilt the 'Joberfly' website with Nuxt, modularizing components, introducing Tailwind CSS, and developing a new homepage and resume page."
+      },
+      "highlights": [
+        {
+          "zh": "重構 Joberfly 網站程式碼並模組化元件",
+          "en": "Refactored Joberfly website code and modularized components"
+        },
+        {
+          "zh": "導入 Tailwind CSS 開發全新首頁",
+          "en": "Introduced Tailwind CSS to build a new homepage"
+        },
+        {
+          "zh": "建立履歷頁面並實現響應式設計",
+          "en": "Built a resume page with responsive design"
+        }
+      ],
+      "ext": {
+        "skills": [
+          "Nuxt",
+          "Tailwind CSS"
+        ]
+      }
+    },
+    {
+      "name": {
+        "zh": "佳音事業股份有限公司",
+        "en": "JOY EDUCATION LTD."
+      },
+      "position": {
+        "zh": "網頁設計師",
+        "en": "Web Designer"
+      },
+      "url": "",
+      "startDate": "2020-03",
+      "endDate": "2021-08",
+      "summary": {
+        "zh": "製作活動網頁與後台 CMS，並以 Vue.js 參與部分專案開發；負責切版、動畫與 UI/UX 優化，與團隊協作串接 API，並以 Git flow 管理版本。",
+        "en": "Built event webpages and a backend CMS, and contributed to several Vue.js projects; handled layout, animations, and UI/UX refinements, worked with the team on API integration, and used Git flow for version control."
+      },
+      "highlights": [
+        {
+          "zh": "製作活動網頁與撰寫 CMS",
+          "en": "Created event webpages and wrote CMS"
+        },
+        {
+          "zh": "實現前端切版動畫與 UI/UX 設計優化",
+          "en": "Implemented frontend layout animations and UI/UX design optimization"
+        },
+        {
+          "zh": "協作進行 API 串接與 Git flow 管理",
+          "en": "Collaborated on API integration and Git flow management"
+        }
+      ],
+      "ext": {
+        "skills": [
+          "Vue",
+          "Git",
+          "Git flow"
+        ]
+      }
+    },
+    {
+      "name": {
+        "zh": "原聚股份有限公司",
+        "en": "Yuanju Co., Ltd. (原聚股份有限公司)"
+      },
+      "position": {
+        "zh": "平面設計師",
+        "en": "Graphic Designer"
+      },
+      "url": "",
+      "startDate": "2019-01",
+      "endDate": "2019-06",
+      "summary": {
+        "zh": "負責品牌手冊、店面視覺與廣宣素材設計，並管理設計外包、協助店面與數位行銷活動。",
+        "en": "Designed brand manuals, store visuals, and promotional materials; managed design outsourcing and supported in-store and digital marketing campaigns."
+      },
+      "highlights": [
+        {
+          "zh": "設計品牌手冊及店面視覺設定",
+          "en": "Designed brand manuals and store visual setups"
+        },
+        {
+          "zh": "管理廣宣素材與設計外包",
+          "en": "Managed promotional materials and design outsourcing"
+        },
+        {
+          "zh": "協助店面行銷活動與數位行銷管理",
+          "en": "Assisted in in-store marketing campaigns and digital marketing management"
+        }
+      ],
+      "ext": {
+        "skills": []
+      }
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": {
+        "zh": "東海大學",
+        "en": "Tunghai University"
+      },
+      "url": "",
+      "area": {
+        "zh": "工業設計",
+        "en": "Industrial Design"
+      },
+      "studyType": {
+        "zh": "學士",
+        "en": "Bachelor's Degree"
+      },
+      "startDate": "2013",
+      "endDate": "2017",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": {
+        "zh": "前端框架",
+        "en": "Frontend Frameworks"
+      },
+      "level": "",
+      "keywords": [
+        "Vue",
+        "Nuxt",
+        "React"
+      ]
+    },
+    {
+      "name": {
+        "zh": "CSS 工具",
+        "en": "CSS Tools"
+      },
+      "level": "",
+      "keywords": [
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": {
+        "zh": "工具與流程",
+        "en": "Tools and Workflows"
+      },
+      "level": "",
+      "keywords": [
+        "Vite",
+        "Webpack",
+        "Git",
+        "Git flow",
+        "GitHub flow"
+      ]
+    },
+    {
+      "name": {
+        "zh": "程式語言",
+        "en": "Programming Languages"
+      },
+      "level": "",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Python"
+      ]
+    },
+    {
+      "name": {
+        "zh": "設計工具",
+        "en": "Design Tools"
+      },
+      "level": "",
+      "keywords": [
+        "Figma",
+        "Adobe XD",
+        "Adobe Photoshop",
+        "Adobe Illustrator"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": {
+        "zh": "中文",
+        "en": "Mandarin"
+      },
+      "fluency": {
+        "zh": "母語",
+        "en": "Native"
+      }
+    },
+    {
+      "language": "English",
+      "fluency": {
+        "zh": "中等 / 日常對話",
+        "en": "Intermediate / Daily Conversation"
+      }
+    }
+  ],
+  "interests": [
+    {
+      "name": {
+        "zh": "休閒",
+        "en": "Leisure"
+      },
+      "keywords": [
+        {
+          "zh": "鋼琴",
+          "en": "Piano"
+        },
+        {
+          "zh": "羽毛球",
+          "en": "Badminton"
+        },
+        {
+          "zh": "攝影",
+          "en": "Photography"
+        },
+        {
+          "zh": "看影集",
+          "en": "Watching TV Series"
+        },
+        {
+          "zh": "旅遊",
+          "en": "Traveling"
+        }
+      ]
+    },
+    {
+      "name": {
+        "zh": "自我成長",
+        "en": "Self-Improvement"
+      },
+      "keywords": [
+        {
+          "zh": "寫程式",
+          "en": "Programming"
+        },
+        {
+          "zh": "語言學習",
+          "en": "Language Learning"
+        },
+        {
+          "zh": "健身",
+          "en": "Fitness"
+        }
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Dobby - LINE Bot",
+      "startDate": "",
+      "endDate": "",
+      "description": {
+        "zh": "在 LINE 群組一鍵報名羽球的機器人。身為羽球社團主揪，原本以文字接龍報名，常有人打錯格式；Dobby 取代接龍，並沿用原本記帳用的 Notion 當資料庫，不需另外架設。",
+        "en": "A LINE bot for one-tap badminton sign-ups in a group chat. As the organizer of a casual badminton group, I replaced our copy-paste text sign-up chain, which kept breaking on formatting mistakes. Dobby uses the Notion workspace I already used for bookkeeping as its database, so there was nothing new to set up."
+      },
+      "highlights": [
+        "LINE Flex Message",
+        "Express.js",
+        "TypeScript",
+        "Notion API"
+      ],
+      "url": "https://github.com/wen-hsiu-hsu/dobby"
+    },
+    {
+      "name": {
+        "zh": "最惱人的 Cookie Banner",
+        "en": "The Most Annoying Cookie Banner"
+      },
+      "startDate": "",
+      "endDate": "",
+      "description": {
+        "zh": "參與 Hackathon 社群活動時，以遊戲化設計提出最惱人的 Cookie Banner 方案，玩家必須在移動的杯子中尋找被蓋住的球，僅在成功遊戲後才能拒絕網站 Cookie。",
+        "en": "During a community hackathon, proposed a gamified design for the most annoying cookie banner, where players must find a ball hidden under moving cups and only allowing rejection of website cookies after successfully completing the game."
+      },
+      "highlights": [
+        {
+          "zh": "創新遊戲化設計",
+          "en": "Innovative gamified design"
+        },
+        {
+          "zh": "參與 Hackathon 競賽",
+          "en": "Participated in a hackathon"
+        }
+      ],
+      "url": "https://github.com/wen-hsiu-hsu/annoying-cookie-banner"
+    },
+    {
+      "name": {
+        "zh": "個人部落格",
+        "en": "Personal Blog"
+      },
+      "startDate": "",
+      "endDate": "",
+      "description": {
+        "zh": "使用 VitePress 建構個人化主題，持續更新程式開發筆記與技術分享，記錄學習成長與技術見解。",
+        "en": "Built a personalized theme using VitePress, continuously updating programming notes and technical insights to document my learning progress."
+      },
+      "highlights": [
+        {
+          "zh": "持續技術成長紀錄",
+          "en": "Continuous record of technical growth"
+        },
+        {
+          "zh": "定期技術分享",
+          "en": "Regular technical sharing"
+        }
+      ],
+      "url": "https://hsiu.soy"
+    },
+    {
+      "name": {
+        "zh": "攝影作品紀錄",
+        "en": "Photography Portfolio"
+      },
+      "startDate": "",
+      "endDate": "",
+      "description": {
+        "zh": "使用 Nuxt 搭配 Sveltia CMS，分享個人生活紀實攝影作品。",
+        "en": "Built with Nuxt and Sveltia CMS to share personal documentary-style photography."
+      },
+      "highlights": [
+        {
+          "zh": "業餘攝影作品紀錄",
+          "en": "Amateur photography journal"
+        }
+      ],
+      "url": "https://photography.hsiu.soy"
+    }
+  ]
+}

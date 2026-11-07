@@ -2,5 +2,10 @@
   "name": "resume-data",
   "private": true,
   "type": "module",
-  "scripts": {}
+  "scripts": {
+    "build": "node build/build.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
 }

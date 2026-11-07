@@ -1,47 +1,47 @@
 {
-  "basics":{
-    "name":"Wen-Hsiu Hsu",
-    "label":"Frontend Engineer",
-    "image":"",
-    "email":"kevin.hsu.hws@gmail.com",
-    "phone":"",
-    "url":"https://resume.hsiu.soy",
-    "summary":"Frontend Engineer specializing in Vue.js, Nuxt, and Tailwind CSS, with a background in industrial design and a strong eye for visual detail and user experience. Independently built the frontend of a course sales platform, led the upgrade from Vue 2 to Vue 3 and the migration from Webpack to Vite, and refactored code to make pages load about 3–5x faster. Recently, I've been building a personal homelab with Raspberry Pi and exploring workflow automation with n8n.",
-    "location":{
-      "city":"New Taipei City",
-      "region":"",
-      "postalCode":"",
-      "countryCode":"Taiwan",
-      "address":""
+  "basics": {
+    "name": "Wen-Hsiu Hsu",
+    "label": "Frontend Engineer",
+    "image": "",
+    "email": "kevin.hsu.hws@gmail.com",
+    "phone": "",
+    "url": "https://resume.hsiu.soy",
+    "summary": "Frontend Engineer specializing in Vue.js, Nuxt, and Tailwind CSS, with a background in industrial design and a strong eye for visual detail and user experience. Independently built the frontend of a course sales platform, led the upgrade from Vue 2 to Vue 3 and the migration from Webpack to Vite, and refactored code to make pages load about 3–5x faster. Recently, I've been building a personal homelab with Raspberry Pi and exploring workflow automation with n8n.",
+    "location": {
+      "city": "New Taipei City",
+      "region": "",
+      "postalCode": "",
+      "countryCode": "Taiwan",
+      "address": ""
     },
-    "profiles":[
+    "profiles": [
       {
-        "network":"github",
-        "username":"wen-hsiu-hsu",
-        "url":"https://github.com/wen-hsiu-hsu"
+        "network": "github",
+        "username": "wen-hsiu-hsu",
+        "url": "https://github.com/wen-hsiu-hsu"
       },
       {
-        "network":"linkedin",
-        "username":"kevin-hws",
-        "url":"https://www.linkedin.com/in/kevin-hws"
+        "network": "linkedin",
+        "username": "kevin-hws",
+        "url": "https://www.linkedin.com/in/kevin-hws"
       },
       {
-        "network":"threads",
-        "username":"hsiu.soy",
-        "url":"https://www.threads.net/@hsiu.soy",
-        "hidden":true
+        "network": "threads",
+        "username": "hsiu.soy",
+        "url": "https://www.threads.net/@hsiu.soy",
+        "hidden": true
       }
     ]
   },
-  "work":[
+  "work": [
     {
-      "name":"United Daily News Co., Ltd.",
-      "position":"Frontend Engineer",
-      "url":"",
-      "startDate":"2022-03",
-      "endDate":"2026-03",
-      "summary":"Owned frontend development for online course platforms: built 'U Haoxue (U 好學)' solo and led the frontend architecture of 'Yike Jingxuan (一刻鯨選)'.",
-      "highlights":[
+      "name": "United Daily News Co., Ltd.",
+      "position": "Frontend Engineer",
+      "url": "",
+      "startDate": "2022-03",
+      "endDate": "2026-03",
+      "summary": "Owned frontend development for online course platforms: built 'U Haoxue (U 好學)' solo and led the frontend architecture of 'Yike Jingxuan (一刻鯨選)'.",
+      "highlights": [
         "Sole frontend developer of 'U Haoxue (U 好學)', delivering course preview and checkout features with Nuxt.js; launched January 2026",
         "Led frontend architecture of 'Yike Jingxuan (一刻鯨選)', building e-commerce-like course sales functionality",
         "Encapsulated a video player plugin to enhance product extensibility",
@@ -51,85 +51,83 @@
       ]
     },
     {
-      "name":"FlyingCrazyer Co., Ltd.",
-      "position":"Frontend Engineer",
-      "url":"",
-      "startDate":"2021-09",
-      "endDate":"2021-12",
-      "summary":"Rebuilt the 'Joberfly' website with Nuxt, modularizing components, introducing Tailwind CSS, and developing a new homepage and resume page.",
-      "highlights":[
+      "name": "FlyingCrazyer Co., Ltd.",
+      "position": "Frontend Engineer",
+      "url": "",
+      "startDate": "2021-09",
+      "endDate": "2021-12",
+      "summary": "Rebuilt the 'Joberfly' website with Nuxt, modularizing components, introducing Tailwind CSS, and developing a new homepage and resume page.",
+      "highlights": [
         "Refactored Joberfly website code and modularized components",
         "Introduced Tailwind CSS to build a new homepage",
         "Built a resume page with responsive design"
       ]
     },
     {
-      "name":"JOY EDUCATION LTD.",
-      "position":"Web Designer",
-      "url":"",
-      "startDate":"2020-03",
-      "endDate":"2021-08",
-      "summary":"Built event webpages and a backend CMS, and contributed to several Vue.js projects; handled layout, animations, and UI/UX refinements, worked with the team on API integration, and used Git flow for version control.",
-      "highlights":[
+      "name": "JOY EDUCATION LTD.",
+      "position": "Web Designer",
+      "url": "",
+      "startDate": "2020-03",
+      "endDate": "2021-08",
+      "summary": "Built event webpages and a backend CMS, and contributed to several Vue.js projects; handled layout, animations, and UI/UX refinements, worked with the team on API integration, and used Git flow for version control.",
+      "highlights": [
         "Created event webpages and wrote CMS",
         "Implemented frontend layout animations and UI/UX design optimization",
         "Collaborated on API integration and Git flow management"
       ]
     },
     {
-      "name":"Yuanju Co., Ltd. (原聚股份有限公司)",
-      "position":"Graphic Designer",
-      "url":"",
-      "startDate":"2019-01",
-      "endDate":"2019-06",
-      "summary":"Designed brand manuals, store visuals, and promotional materials; managed design outsourcing and supported in-store and digital marketing campaigns.",
-      "highlights":[
+      "name": "Yuanju Co., Ltd. (原聚股份有限公司)",
+      "position": "Graphic Designer",
+      "url": "",
+      "startDate": "2019-01",
+      "endDate": "2019-06",
+      "summary": "Designed brand manuals, store visuals, and promotional materials; managed design outsourcing and supported in-store and digital marketing campaigns.",
+      "highlights": [
         "Designed brand manuals and store visual setups",
         "Managed promotional materials and design outsourcing",
         "Assisted in in-store marketing campaigns and digital marketing management"
       ]
     }
   ],
-  "volunteer":[],
-  "education":[
+  "volunteer": [],
+  "education": [
     {
-      "institution":"Tunghai University",
-      "url":"",
-      "area":"Industrial Design",
-      "studyType":"Bachelor's Degree",
-      "startDate":"2013",
-      "endDate":"2017",
-      "score":"",
-      "courses":[
-        
-      ]
+      "institution": "Tunghai University",
+      "url": "",
+      "area": "Industrial Design",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2013",
+      "endDate": "2017",
+      "score": "",
+      "courses": []
     }
   ],
-  "awards":[],
-  "certificates":[],
-  "publications":[],
-  "skills":[
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
     {
-      "name":"Frontend Frameworks",
-      "level":"",
-      "keywords":[
+      "name": "Frontend Frameworks",
+      "level": "",
+      "keywords": [
         "Vue",
         "Nuxt",
         "React"
       ]
     },
     {
-      "name":"CSS Tools",
-      "level":"",
-      "keywords":[
+      "name": "CSS Tools",
+      "level": "",
+      "keywords": [
         "Tailwind CSS",
         "Bootstrap"
       ]
     },
     {
-      "name":"Tools and Workflows",
-      "level":"",
-      "keywords":[
+      "name": "Tools and Workflows",
+      "level": "",
+      "keywords": [
         "Vite",
         "Webpack",
         "Git",
@@ -138,18 +136,18 @@
       ]
     },
     {
-      "name":"Programming Languages",
-      "level":"",
-      "keywords":[
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
         "JavaScript",
         "TypeScript",
         "Python"
       ]
     },
     {
-      "name":"Design Tools",
-      "level":"",
-      "keywords":[
+      "name": "Design Tools",
+      "level": "",
+      "keywords": [
         "Figma",
         "Adobe XD",
         "Adobe Photoshop",
@@ -157,20 +155,20 @@
       ]
     }
   ],
-  "languages":[
+  "languages": [
     {
-      "language":"Mandarin",
-      "fluency":"Native"
+      "language": "Mandarin",
+      "fluency": "Native"
     },
     {
-      "language":"English",
-      "fluency":"Intermediate / Daily Conversation"
+      "language": "English",
+      "fluency": "Intermediate / Daily Conversation"
     }
   ],
-  "interests":[
+  "interests": [
     {
-      "name":"Leisure",
-      "keywords":[
+      "name": "Leisure",
+      "keywords": [
         "Piano",
         "Badminton",
         "Photography",
@@ -179,60 +177,60 @@
       ]
     },
     {
-      "name":"Self-Improvement",
-      "keywords":[
+      "name": "Self-Improvement",
+      "keywords": [
         "Programming",
         "Language Learning",
         "Fitness"
       ]
     }
   ],
-  "references":[],
-  "projects":[
+  "references": [],
+  "projects": [
     {
-      "name":"Dobby - LINE Bot",
-      "startDate":"",
-      "endDate":"",
-      "description":"A LINE bot for one-tap badminton sign-ups in a group chat. As the organizer of a casual badminton group, I replaced our copy-paste text sign-up chain, which kept breaking on formatting mistakes. Dobby uses the Notion workspace I already used for bookkeeping as its database, so there was nothing new to set up.",
-      "highlights":[
+      "name": "Dobby - LINE Bot",
+      "startDate": "",
+      "endDate": "",
+      "description": "A LINE bot for one-tap badminton sign-ups in a group chat. As the organizer of a casual badminton group, I replaced our copy-paste text sign-up chain, which kept breaking on formatting mistakes. Dobby uses the Notion workspace I already used for bookkeeping as its database, so there was nothing new to set up.",
+      "highlights": [
         "LINE Flex Message",
         "Express.js",
         "TypeScript",
         "Notion API"
       ],
-      "url":"https://github.com/wen-hsiu-hsu/dobby"
+      "url": "https://github.com/wen-hsiu-hsu/dobby"
     },
     {
-      "name":"The Most Annoying Cookie Banner",
-      "startDate":"",
-      "endDate":"",
-      "description":"During a community hackathon, proposed a gamified design for the most annoying cookie banner, where players must find a ball hidden under moving cups and only allowing rejection of website cookies after successfully completing the game.",
-      "highlights":[
+      "name": "The Most Annoying Cookie Banner",
+      "startDate": "",
+      "endDate": "",
+      "description": "During a community hackathon, proposed a gamified design for the most annoying cookie banner, where players must find a ball hidden under moving cups and only allowing rejection of website cookies after successfully completing the game.",
+      "highlights": [
         "Innovative gamified design",
         "Participated in a hackathon"
       ],
-      "url":"https://github.com/wen-hsiu-hsu/annoying-cookie-banner"
+      "url": "https://github.com/wen-hsiu-hsu/annoying-cookie-banner"
     },
     {
-      "name":"Personal Blog",
-      "startDate":"",
-      "endDate":"",
-      "description":"Built a personalized theme using VitePress, continuously updating programming notes and technical insights to document my learning progress.",
-      "highlights":[
+      "name": "Personal Blog",
+      "startDate": "",
+      "endDate": "",
+      "description": "Built a personalized theme using VitePress, continuously updating programming notes and technical insights to document my learning progress.",
+      "highlights": [
         "Continuous record of technical growth",
         "Regular technical sharing"
       ],
-      "url":"https://hsiu.soy"
+      "url": "https://hsiu.soy"
     },
     {
-      "name":"Photography Portfolio",
-      "startDate":"",
-      "endDate":"",
-      "description":"Built with Nuxt and Sveltia CMS to share personal documentary-style photography.",
-      "highlights":[
+      "name": "Photography Portfolio",
+      "startDate": "",
+      "endDate": "",
+      "description": "Built with Nuxt and Sveltia CMS to share personal documentary-style photography.",
+      "highlights": [
         "Amateur photography journal"
       ],
-      "url":"https://photography.hsiu.soy"
+      "url": "https://photography.hsiu.soy"
     }
   ]
 }
