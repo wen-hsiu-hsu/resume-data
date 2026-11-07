@@ -10,8 +10,16 @@
 
 ## 其他內容
 
-- `specs/`：各求職平台（LinkedIn、104、CakeResume、Yourator）的欄位規格。
-- `output/`：`/resume-sync` 產出的各平台貼上用內容（`.md`）。
-- `.claude/commands/`：Claude Code 指令 `/resume-sync`、`/spec-update`。
+- `source/resume.json`：唯一資料來源。中英不同的值寫成 `{ "zh": …, "en": … }`，JSON Resume 沒有的平台欄位放在 `ext`。
+- `specs/<平台>.json`：各求職平台（LinkedIn、104、CakeResume、Yourator）的欄位規格。
+- `output/<平台>.<zh|en>.json`：依規格產出的各平台貼上用內容。
+- `logs/YYYY-MM-DD.md`：每次 build 後 `output/` 的變動清單。
+- `.claude/commands/`：Claude Code 指令 `/spec-update`。
+
+## 更新資料
+
+1. 修改 `source/resume.json`。
+2. 執行 `npm run build`（Node 24 以上，沒有相依套件）：產生 `data/resume_*.json`、`output/`，並在 `logs/` 記下這次的變動；超過字數上限的欄位會標 ⚠️，不會截斷。
+3. 依 log 逐項到各平台貼上，完成的打勾。
 
 push 到 `main` 後，網站最晚約 20 分鐘更新（Pages 部署＋快取＋網站 SWR 10 分鐘）。

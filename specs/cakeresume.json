@@ -1,0 +1,185 @@
+{
+  "platform": "CakeResume",
+  "hosts": [
+    "www.cake.me",
+    "www.cakeresume.com"
+  ],
+  "source": "尚未確認。初版依 JSON Resume 結構列出可能的欄位，欄位名稱與字數上限需執行 /spec-update cakeresume 補齊。",
+  "checked": null,
+  "sections": [
+    {
+      "name": "基本資料",
+      "fields": [
+        {
+          "label": "姓名",
+          "limit": null,
+          "note": "待確認",
+          "path": "basics.name"
+        },
+        {
+          "label": "職稱／標題",
+          "limit": null,
+          "note": "待確認",
+          "path": "basics.label"
+        },
+        {
+          "label": "居住地",
+          "limit": null,
+          "note": "待確認",
+          "path": "basics.location.city"
+        },
+        {
+          "label": "個人連結",
+          "limit": null,
+          "note": "待確認",
+          "path": [
+            "basics.url",
+            "basics.profiles[].url"
+          ],
+          "format": "lines"
+        }
+      ]
+    },
+    {
+      "name": "自我介紹",
+      "fields": [
+        {
+          "label": "自我介紹",
+          "limit": null,
+          "note": "待確認",
+          "path": "basics.summary"
+        }
+      ]
+    },
+    {
+      "name": "工作經歷",
+      "each": "work",
+      "fields": [
+        {
+          "label": "公司名稱",
+          "limit": null,
+          "note": "待確認",
+          "path": "name"
+        },
+        {
+          "label": "職稱",
+          "limit": null,
+          "note": "待確認",
+          "path": "position"
+        },
+        {
+          "label": "起訖時間",
+          "limit": null,
+          "note": "待確認",
+          "path": [
+            "startDate",
+            "endDate"
+          ],
+          "format": "ym"
+        },
+        {
+          "label": "工作內容",
+          "limit": null,
+          "note": "待確認",
+          "path": [
+            "summary",
+            "highlights"
+          ],
+          "format": "summary+bullets"
+        }
+      ]
+    },
+    {
+      "name": "學歷",
+      "each": "education",
+      "fields": [
+        {
+          "label": "學校",
+          "limit": null,
+          "note": "待確認",
+          "path": "institution"
+        },
+        {
+          "label": "科系",
+          "limit": null,
+          "note": "待確認",
+          "path": "area"
+        },
+        {
+          "label": "學位",
+          "limit": null,
+          "note": "待確認",
+          "path": "studyType"
+        },
+        {
+          "label": "起訖時間",
+          "limit": null,
+          "note": "待確認",
+          "path": [
+            "startDate",
+            "endDate"
+          ],
+          "format": "ym"
+        }
+      ]
+    },
+    {
+      "name": "技能",
+      "fields": [
+        {
+          "label": "技能",
+          "limit": null,
+          "note": "待確認",
+          "path": "skills[].keywords",
+          "format": "tags"
+        }
+      ]
+    },
+    {
+      "name": "作品／專案",
+      "each": "projects",
+      "fields": [
+        {
+          "label": "名稱",
+          "limit": null,
+          "note": "待確認",
+          "path": "name"
+        },
+        {
+          "label": "說明",
+          "limit": null,
+          "note": "待確認",
+          "path": [
+            "description",
+            "highlights"
+          ],
+          "format": "summary+bullets"
+        },
+        {
+          "label": "連結",
+          "limit": null,
+          "note": "待確認",
+          "path": "url"
+        }
+      ]
+    },
+    {
+      "name": "語言能力",
+      "each": "languages",
+      "fields": [
+        {
+          "label": "語言",
+          "limit": null,
+          "note": "待確認",
+          "path": "language"
+        },
+        {
+          "label": "程度",
+          "limit": null,
+          "note": "待確認",
+          "path": "fluency"
+        }
+      ]
+    }
+  ]
+}

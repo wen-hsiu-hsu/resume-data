@@ -1,0 +1,430 @@
+{
+  "platform": "Yourator",
+  "lang": "en",
+  "checked": null,
+  "sections": [
+    {
+      "name": "基本資料",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "姓名",
+              "value": "Wen-Hsiu Hsu",
+              "length": 12,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱／標題",
+              "value": "Frontend Engineer",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "居住地",
+              "value": "New Taipei City",
+              "length": 15,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "個人連結",
+              "value": "https://resume.hsiu.soy\nhttps://github.com/wen-hsiu-hsu\nhttps://www.linkedin.com/in/kevin-hws",
+              "list": [
+                "https://resume.hsiu.soy",
+                "https://github.com/wen-hsiu-hsu",
+                "https://www.linkedin.com/in/kevin-hws"
+              ],
+              "length": 3,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "自我介紹",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "自我介紹",
+              "value": "Frontend Engineer specializing in Vue.js, Nuxt, and Tailwind CSS, with a background in industrial design and a strong eye for visual detail and user experience. Independently built the frontend of a course sales platform, led the upgrade from Vue 2 to Vue 3 and the migration from Webpack to Vite, and refactored code to make pages load about 3–5x faster. Recently, I've been building a personal homelab with Raspberry Pi and exploring workflow automation with n8n.",
+              "length": 465,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工作經歷",
+      "items": [
+        {
+          "title": "United Daily News Co., Ltd.",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "United Daily News Co., Ltd.",
+              "length": 27,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "Frontend Engineer",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2022/03 – 2026/03",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "Owned frontend development for online course platforms: built 'U Haoxue (U 好學)' solo and led the frontend architecture of 'Yike Jingxuan (一刻鯨選)'.\n\n• Sole frontend developer of 'U Haoxue (U 好學)', delivering course preview and checkout features with Nuxt.js; launched January 2026\n• Led frontend architecture of 'Yike Jingxuan (一刻鯨選)', building e-commerce-like course sales functionality\n• Encapsulated a video player plugin to enhance product extensibility\n• Refactored and optimized code, cutting load times by roughly 3–5x\n• Led the migration from Webpack to Vite and the upgrade from Vue 2 to Vue 3\n• Integrated Tailwind CSS to enhance development efficiency and code maintainability",
+              "length": 685,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "FlyingCrazyer Co., Ltd.",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "FlyingCrazyer Co., Ltd.",
+              "length": 23,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "Frontend Engineer",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2021/09 – 2021/12",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "Rebuilt the 'Joberfly' website with Nuxt, modularizing components, introducing Tailwind CSS, and developing a new homepage and resume page.\n\n• Refactored Joberfly website code and modularized components\n• Introduced Tailwind CSS to build a new homepage\n• Built a resume page with responsive design",
+              "length": 297,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "JOY EDUCATION LTD.",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "JOY EDUCATION LTD.",
+              "length": 18,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "Web Designer",
+              "length": 12,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2020/03 – 2021/08",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "Built event webpages and a backend CMS, and contributed to several Vue.js projects; handled layout, animations, and UI/UX refinements, worked with the team on API integration, and used Git flow for version control.\n\n• Created event webpages and wrote CMS\n• Implemented frontend layout animations and UI/UX design optimization\n• Collaborated on API integration and Git flow management",
+              "length": 383,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "Yuanju Co., Ltd. (原聚股份有限公司)",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "Yuanju Co., Ltd. (原聚股份有限公司)",
+              "length": 27,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "Graphic Designer",
+              "length": 16,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2019/01 – 2019/06",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "Designed brand manuals, store visuals, and promotional materials; managed design outsourcing and supported in-store and digital marketing campaigns.\n\n• Designed brand manuals and store visual setups\n• Managed promotional materials and design outsourcing\n• Assisted in in-store marketing campaigns and digital marketing management",
+              "length": 329,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "學歷",
+      "items": [
+        {
+          "title": "Tunghai University",
+          "fields": [
+            {
+              "label": "學校",
+              "value": "Tunghai University",
+              "length": 18,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "科系",
+              "value": "Industrial Design",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "學位",
+              "value": "Bachelor's Degree",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2013 – 2017",
+              "length": 11,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "技能",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "技能",
+              "value": "Vue, Nuxt, React, Tailwind CSS, Bootstrap, Vite, Webpack, Git, Git flow, GitHub flow, JavaScript, TypeScript, Python, Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator",
+              "list": [
+                "Vue",
+                "Nuxt",
+                "React",
+                "Tailwind CSS",
+                "Bootstrap",
+                "Vite",
+                "Webpack",
+                "Git",
+                "Git flow",
+                "GitHub flow",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Figma",
+                "Adobe XD",
+                "Adobe Photoshop",
+                "Adobe Illustrator"
+              ],
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "作品／專案",
+      "items": [
+        {
+          "title": "Dobby - LINE Bot",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "Dobby - LINE Bot",
+              "length": 16,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "A LINE bot for one-tap badminton sign-ups in a group chat. As the organizer of a casual badminton group, I replaced our copy-paste text sign-up chain, which kept breaking on formatting mistakes. Dobby uses the Notion workspace I already used for bookkeeping as its database, so there was nothing new to set up.\n\n• LINE Flex Message\n• Express.js\n• TypeScript\n• Notion API",
+              "length": 370,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://github.com/wen-hsiu-hsu/dobby",
+              "length": 37,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "The Most Annoying Cookie Banner",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "The Most Annoying Cookie Banner",
+              "length": 31,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "During a community hackathon, proposed a gamified design for the most annoying cookie banner, where players must find a ball hidden under moving cups and only allowing rejection of website cookies after successfully completing the game.\n\n• Innovative gamified design\n• Participated in a hackathon",
+              "length": 296,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://github.com/wen-hsiu-hsu/annoying-cookie-banner",
+              "length": 54,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "Personal Blog",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "Personal Blog",
+              "length": 13,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "Built a personalized theme using VitePress, continuously updating programming notes and technical insights to document my learning progress.\n\n• Continuous record of technical growth\n• Regular technical sharing",
+              "length": 209,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://hsiu.soy",
+              "length": 16,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "Photography Portfolio",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "Photography Portfolio",
+              "length": 21,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "Built with Nuxt and Sveltia CMS to share personal documentary-style photography.\n\n• Amateur photography journal",
+              "length": 111,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://photography.hsiu.soy",
+              "length": 28,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "語言能力",
+      "items": [
+        {
+          "title": "Mandarin",
+          "fields": [
+            {
+              "label": "語言",
+              "value": "Mandarin",
+              "length": 8,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "程度",
+              "value": "Native",
+              "length": 6,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "English",
+          "fields": [
+            {
+              "label": "語言",
+              "value": "English",
+              "length": 7,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "程度",
+              "value": "Intermediate / Daily Conversation",
+              "length": 33,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

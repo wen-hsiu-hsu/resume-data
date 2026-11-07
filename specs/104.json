@@ -1,0 +1,87 @@
+{
+  "platform": "104",
+  "hosts": ["pda.104.com.tw"],
+  "source": "https://pda.104.com.tw/profile/edit （各區塊編輯表單；上限取自欄位 maxlength 或頁面計數器）",
+  "checked": "2026-11-07",
+  "sections": [
+    {
+      "name": "基本資料",
+      "fields": [
+        { "label": "姓名", "limit": null, "path": "basics.name", "lang": "zh", "note": "待確認；唯讀，需透過「修改會員資料」到 accounts.104.com.tw 修改" },
+        { "label": "英文姓名", "limit": null, "path": "basics.name", "lang": "en", "note": "待確認；欄位沒有 maxlength，也沒有計數器" },
+        { "label": "E-mail", "path": "basics.email", "note": "唯讀，透過「修改會員資料」到 accounts.104.com.tw 修改" },
+        { "label": "聯絡電話", "path": null, "note": "私密資訊，不放進資料" },
+        { "label": "出生日期", "path": null, "note": "私密資訊，不放進資料" },
+        { "label": "次要手機", "path": null, "note": "私密資訊，不放進資料" },
+        { "label": "市內電話", "path": null, "note": "私密資訊，不放進資料" },
+        { "label": "聯絡方式", "limit": null, "path": null, "note": "待確認；提示文字「例：手機聯絡，0900-1200」" },
+        { "label": "職稱／標題", "limit": null, "path": "basics.label", "note": "待確認；頁面摘要顯示「希望職稱」，屬於求職條件區塊" }
+      ]
+    },
+    {
+      "name": "個人資料",
+      "fields": [
+        { "label": "兵役狀況", "path": null, "note": "私密資訊，不放進資料" },
+        { "label": "退伍日期", "path": null, "note": "私密資訊，不放進資料" },
+        { "label": "通訊地址", "limit": null, "path": "basics.location.city", "note": "待確認；縣市區下拉＋詳細地址，公司只會看到「縣市區+路名」" },
+        { "label": "個人簡介", "limit": 1000, "path": "basics.summary", "note": "上限取自頁面計數器" },
+        { "label": "個人格言", "limit": 100, "path": "basics.ext.motto", "note": "上限取自頁面計數器" },
+        { "label": "個人特色", "limit": null, "path": "basics.ext.traits", "format": "tags", "note": "數量上限待確認；單一標籤 20 字（maxlength）；按 Enter 新增" },
+        { "label": "個人連結", "limit": null, "path": ["basics.url", "basics.profiles[].url"], "format": "lines", "note": "待確認；類型可選：個人網站、Blogger、Medium、Facebook、Instagram、Youtube、Github、Stackoverflow、Dribbble、Behance" },
+        { "label": "駕駛執照", "path": null, "note": "原始資料沒有" },
+        { "label": "交通工具", "path": null, "note": "原始資料沒有" },
+        { "label": "特殊身分", "path": null, "note": "私密資訊，不放進資料" }
+      ]
+    },
+    {
+      "name": "工作經驗",
+      "each": "work",
+      "fields": [
+        { "label": "公司名稱", "limit": 200, "path": "name", "note": "可勾選「不顯示公司名稱」" },
+        { "label": "產業／規模", "path": null, "note": "原始資料沒有" },
+        { "label": "工作地點", "path": "location" },
+        { "label": "職務名稱", "limit": 200, "path": "position" },
+        { "label": "職務類別", "path": "ext.jobCategory", "note": "必填；含全職／兼職" },
+        { "label": "任職期間", "path": ["startDate", "endDate"], "format": "ym", "note": "沒有結束日期時勾選「仍在職」" },
+        { "label": "工作描述", "limit": 2000, "path": ["summary", "highlights"], "format": "summary+bullets", "note": "上限取自頁面計數器" },
+        { "label": "工作技能", "limit": 6, "path": "ext.skills", "format": "tags", "note": "上限 6 組（頁面計數器）" }
+      ]
+    },
+    {
+      "name": "學歷",
+      "each": "education",
+      "fields": [
+        { "label": "學校名稱", "limit": 200, "path": "institution", "note": "第一筆被系統當作最高學歷" },
+        { "label": "學歷", "path": "studyType", "note": "下拉：博士、碩士、大學、四技、二技、二專、三專、五專、高中、高職、國中(含)以下" },
+        { "label": "科系名稱", "limit": 200, "path": "area" },
+        { "label": "就學狀態", "path": null, "note": "原始資料沒有；畢業／肄業／就學中" },
+        { "label": "學校地區", "path": null, "note": "原始資料沒有；台灣／國外" },
+        { "label": "就學期間", "path": ["startDate", "endDate"], "format": "ym" }
+      ]
+    },
+    {
+      "name": "專長",
+      "each": "skills",
+      "fields": [
+        { "label": "專長名稱", "limit": 200, "path": "name" },
+        { "label": "專長描述", "limit": 1000, "path": "ext.description", "note": "上限取自頁面計數器" },
+        { "label": "專長特色", "limit": 10, "path": "keywords", "format": "tags", "note": "上限 10 組（頁面計數器）；單一標籤 40 字（maxlength）" }
+      ]
+    },
+    {
+      "name": "語文能力",
+      "each": "languages",
+      "fields": [
+        { "label": "語言", "path": "language" },
+        { "label": "聽／說／讀／寫", "path": "fluency", "note": "四項分開選；選項：不會、略懂、中等、精通" }
+      ]
+    },
+    {
+      "name": "自傳",
+      "fields": [
+        { "label": "中文自傳", "limit": 4000, "path": "basics.summary", "lang": "zh", "note": "上限取自頁面計數器" },
+        { "label": "英文自傳", "limit": 8000, "path": "basics.summary", "lang": "en", "note": "上限取自頁面計數器" }
+      ]
+    }
+  ]
+}

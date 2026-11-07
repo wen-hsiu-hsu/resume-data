@@ -1,0 +1,67 @@
+{
+  "platform": "LinkedIn",
+  "hosts": ["www.linkedin.com"],
+  "source": "LinkedIn 官方網域的說明文件（各欄位 note 附網址）。不讀取 LinkedIn 頁面。中文內容要貼在「其他語言的個人檔案」：https://www.linkedin.com/help/linkedin/answer/a593695",
+  "checked": "2026-11-03",
+  "sections": [
+    {
+      "name": "Intro",
+      "fields": [
+        { "label": "Headline", "limit": 220, "path": "basics.ext.headline", "note": "多數位置只顯示前 60–65 字元。來源：https://business.linkedin.com/sell/resources/effective-sales-profile" },
+        { "label": "Location", "path": ["basics.location.city", "basics.location.countryCode"], "note": "下拉選單選取" }
+      ]
+    },
+    {
+      "name": "About",
+      "fields": [
+        { "label": "About", "limit": 2600, "path": "basics.summary", "note": "來源：https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own" }
+      ]
+    },
+    {
+      "name": "Experience",
+      "each": "work",
+      "title": "name",
+      "fields": [
+        { "label": "Title", "limit": null, "path": "position", "note": "待確認" },
+        { "label": "Company name", "limit": null, "path": "name", "note": "待確認" },
+        { "label": "Start date / End date", "path": ["startDate", "endDate"], "format": "ym" },
+        { "label": "Location", "limit": null, "path": "location", "note": "待確認" },
+        { "label": "Description", "limit": null, "path": ["summary", "highlights"], "format": "summary+bullets", "note": "待確認；官方 Help 未列上限：https://www.linkedin.com/help/linkedin/answer/a593695" },
+        { "label": "Skills", "limit": 5, "path": "ext.skills", "format": "tags", "note": "每段最多 5 個。來源：https://business.linkedin.com/sell/resources/effective-sales-profile" }
+      ]
+    },
+    {
+      "name": "Education",
+      "each": "education",
+      "fields": [
+        { "label": "School", "limit": null, "path": "institution", "note": "待確認" },
+        { "label": "Degree", "limit": null, "path": "studyType", "note": "待確認" },
+        { "label": "Field of study", "limit": null, "path": "area", "note": "待確認" },
+        { "label": "Start date / End date", "path": ["startDate", "endDate"], "format": "ym" }
+      ]
+    },
+    {
+      "name": "Skills",
+      "fields": [
+        { "label": "Skill", "limit": 100, "path": "skills[].keywords", "format": "lines", "note": "最多 100 個，逐一新增。來源：https://www.linkedin.com/help/linkedin/answer/a549047" }
+      ]
+    },
+    {
+      "name": "Projects",
+      "each": "projects",
+      "fields": [
+        { "label": "Project name", "limit": null, "path": "name", "note": "待確認" },
+        { "label": "Description", "limit": null, "path": ["description", "highlights"], "format": "summary+bullets", "note": "待確認" },
+        { "label": "Project URL", "limit": null, "path": "url", "note": "待確認" }
+      ]
+    },
+    {
+      "name": "Languages",
+      "each": "languages",
+      "fields": [
+        { "label": "Language", "path": "language" },
+        { "label": "Proficiency", "path": "fluency", "note": "下拉選單，選最接近的選項" }
+      ]
+    }
+  ]
+}

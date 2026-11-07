@@ -1,0 +1,430 @@
+{
+  "platform": "CakeResume",
+  "lang": "zh",
+  "checked": null,
+  "sections": [
+    {
+      "name": "基本資料",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "姓名",
+              "value": "許文修",
+              "length": 3,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱／標題",
+              "value": "前端工程師",
+              "length": 5,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "居住地",
+              "value": "新北市",
+              "length": 3,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "個人連結",
+              "value": "https://resume.hsiu.soy\nhttps://github.com/wen-hsiu-hsu\nhttps://www.linkedin.com/in/kevin-hws",
+              "list": [
+                "https://resume.hsiu.soy",
+                "https://github.com/wen-hsiu-hsu",
+                "https://www.linkedin.com/in/kevin-hws"
+              ],
+              "length": 3,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "自我介紹",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "自我介紹",
+              "value": "專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
+              "length": 170,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工作經歷",
+      "items": [
+        {
+          "title": "聯合報股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "聯合報股份有限公司",
+              "length": 9,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "前端工程師",
+              "length": 5,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2022/03 – 2026/03",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "負責線上課程平台前端開發，獨立完成「U 好學」並主導「一刻鯨選」前端架構。\n\n• 獨立完成「U 好學」前端開發並於 2026 年 1 月上線，以 Nuxt.js 實作課程試聽／試看與購物車結帳功能\n• 主導「一刻鯨選」前端架構，打造類電商課程銷售功能\n• 封裝影音播放器插件以提升產品擴展性\n• 重構並優化程式碼使載入速度提升約 3～5 倍\n• 主導 Webpack 遷移至 Vite，並將專案從 Vue 2 升級至 Vue 3\n• 導入 Tailwind CSS 提升開發效率與程式碼維護性",
+              "length": 246,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "讓狂人飛教育股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "讓狂人飛教育股份有限公司",
+              "length": 12,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "網頁前端",
+              "length": 4,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2021/09 – 2021/12",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "以 Nuxt 重構 Joberfly 網站，模組化元件並導入 Tailwind CSS，開發新版首頁與履歷頁面。\n\n• 重構 Joberfly 網站程式碼並模組化元件\n• 導入 Tailwind CSS 開發全新首頁\n• 建立履歷頁面並實現響應式設計",
+              "length": 125,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "佳音事業股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "佳音事業股份有限公司",
+              "length": 10,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "網頁設計師",
+              "length": 5,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2020/03 – 2021/08",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "製作活動網頁與後台 CMS，並以 Vue.js 參與部分專案開發；負責切版、動畫與 UI/UX 優化，與團隊協作串接 API，並以 Git flow 管理版本。\n\n• 製作活動網頁與撰寫 CMS\n• 實現前端切版動畫與 UI/UX 設計優化\n• 協作進行 API 串接與 Git flow 管理",
+              "length": 147,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "原聚股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "原聚股份有限公司",
+              "length": 8,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "職稱",
+              "value": "平面設計師",
+              "length": 5,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2019/01 – 2019/06",
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "工作內容",
+              "value": "負責品牌手冊、店面視覺與廣宣素材設計，並管理設計外包、協助店面與數位行銷活動。\n\n• 設計品牌手冊及店面視覺設定\n• 管理廣宣素材與設計外包\n• 協助店面行銷活動與數位行銷管理",
+              "length": 88,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "學歷",
+      "items": [
+        {
+          "title": "東海大學",
+          "fields": [
+            {
+              "label": "學校",
+              "value": "東海大學",
+              "length": 4,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "科系",
+              "value": "工業設計",
+              "length": 4,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "學位",
+              "value": "學士",
+              "length": 2,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "起訖時間",
+              "value": "2013 – 2017",
+              "length": 11,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "技能",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "技能",
+              "value": "Vue, Nuxt, React, Tailwind CSS, Bootstrap, Vite, Webpack, Git, Git flow, GitHub flow, JavaScript, TypeScript, Python, Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator",
+              "list": [
+                "Vue",
+                "Nuxt",
+                "React",
+                "Tailwind CSS",
+                "Bootstrap",
+                "Vite",
+                "Webpack",
+                "Git",
+                "Git flow",
+                "GitHub flow",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Figma",
+                "Adobe XD",
+                "Adobe Photoshop",
+                "Adobe Illustrator"
+              ],
+              "length": 17,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "作品／專案",
+      "items": [
+        {
+          "title": "Dobby - LINE Bot",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "Dobby - LINE Bot",
+              "length": 16,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "在 LINE 群組一鍵報名羽球的機器人。身為羽球社團主揪，原本以文字接龍報名，常有人打錯格式；Dobby 取代接龍，並沿用原本記帳用的 Notion 當資料庫，不需另外架設。\n\n• LINE Flex Message\n• Express.js\n• TypeScript\n• Notion API",
+              "length": 147,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://github.com/wen-hsiu-hsu/dobby",
+              "length": 37,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "最惱人的 Cookie Banner",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "最惱人的 Cookie Banner",
+              "length": 18,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "參與 Hackathon 社群活動時，以遊戲化設計提出最惱人的 Cookie Banner 方案，玩家必須在移動的杯子中尋找被蓋住的球，僅在成功遊戲後才能拒絕網站 Cookie。\n\n• 創新遊戲化設計\n• 參與 Hackathon 競賽",
+              "length": 118,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://github.com/wen-hsiu-hsu/annoying-cookie-banner",
+              "length": 54,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "個人部落格",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "個人部落格",
+              "length": 5,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "使用 VitePress 建構個人化主題，持續更新程式開發筆記與技術分享，記錄學習成長與技術見解。\n\n• 持續技術成長紀錄\n• 定期技術分享",
+              "length": 70,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://hsiu.soy",
+              "length": 16,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "攝影作品紀錄",
+          "fields": [
+            {
+              "label": "名稱",
+              "value": "攝影作品紀錄",
+              "length": 6,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "說明",
+              "value": "使用 Nuxt 搭配 Sveltia CMS，分享個人生活紀實攝影作品。\n\n• 業餘攝影作品紀錄",
+              "length": 48,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "連結",
+              "value": "https://photography.hsiu.soy",
+              "length": 28,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "語言能力",
+      "items": [
+        {
+          "title": "中文",
+          "fields": [
+            {
+              "label": "語言",
+              "value": "中文",
+              "length": 2,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "程度",
+              "value": "母語",
+              "length": 2,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        },
+        {
+          "title": "English",
+          "fields": [
+            {
+              "label": "語言",
+              "value": "English",
+              "length": 7,
+              "limit": null,
+              "note": "待確認"
+            },
+            {
+              "label": "程度",
+              "value": "中等 / 日常對話",
+              "length": 9,
+              "limit": null,
+              "note": "待確認"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

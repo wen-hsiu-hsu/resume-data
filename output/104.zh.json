@@ -1,99 +1,696 @@
 {
   "platform": "104",
   "lang": "zh",
-  "dataCommit": "669cf09",
-  "fields": {
-    "bio.zh": "專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
-    "work": [
-      {
-        "match": {
-          "name": "聯合報股份有限公司",
-          "startDate": "2022-03"
+  "checked": "2026-11-07",
+  "sections": [
+    {
+      "name": "基本資料",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "姓名",
+              "value": "許文修",
+              "length": 3,
+              "limit": null,
+              "note": "待確認；唯讀，需透過「修改會員資料」到 accounts.104.com.tw 修改"
+            },
+            {
+              "label": "英文姓名",
+              "value": "Wen-Hsiu Hsu",
+              "length": 12,
+              "limit": null,
+              "note": "待確認；欄位沒有 maxlength，也沒有計數器"
+            },
+            {
+              "label": "E-mail",
+              "value": "kevin.hsu.hws@gmail.com",
+              "length": 23,
+              "limit": null,
+              "note": "唯讀，透過「修改會員資料」到 accounts.104.com.tw 修改"
+            },
+            {
+              "label": "聯絡電話",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            },
+            {
+              "label": "出生日期",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            },
+            {
+              "label": "次要手機",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            },
+            {
+              "label": "市內電話",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            },
+            {
+              "label": "聯絡方式",
+              "missing": true,
+              "limit": null,
+              "note": "待確認；提示文字「例：手機聯絡，0900-1200」"
+            },
+            {
+              "label": "職稱／標題",
+              "value": "前端工程師",
+              "length": 5,
+              "limit": null,
+              "note": "待確認；頁面摘要顯示「希望職稱」，屬於求職條件區塊"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "個人資料",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "兵役狀況",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            },
+            {
+              "label": "退伍日期",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            },
+            {
+              "label": "通訊地址",
+              "value": "新北市",
+              "length": 3,
+              "limit": null,
+              "note": "待確認；縣市區下拉＋詳細地址，公司只會看到「縣市區+路名」"
+            },
+            {
+              "label": "個人簡介",
+              "value": "專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
+              "length": 170,
+              "limit": 1000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "個人格言",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": 100,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "個人特色",
+              "missing": true,
+              "value": "",
+              "list": [],
+              "length": 0,
+              "limit": null,
+              "note": "數量上限待確認；單一標籤 20 字（maxlength）；按 Enter 新增"
+            },
+            {
+              "label": "個人連結",
+              "value": "https://resume.hsiu.soy\nhttps://github.com/wen-hsiu-hsu\nhttps://www.linkedin.com/in/kevin-hws",
+              "list": [
+                "https://resume.hsiu.soy",
+                "https://github.com/wen-hsiu-hsu",
+                "https://www.linkedin.com/in/kevin-hws"
+              ],
+              "length": 3,
+              "limit": null,
+              "note": "待確認；類型可選：個人網站、Blogger、Medium、Facebook、Instagram、Youtube、Github、Stackoverflow、Dribbble、Behance"
+            },
+            {
+              "label": "駕駛執照",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有"
+            },
+            {
+              "label": "交通工具",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有"
+            },
+            {
+              "label": "特殊身分",
+              "missing": true,
+              "limit": null,
+              "note": "私密資訊，不放進資料"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工作經驗",
+      "items": [
+        {
+          "title": "聯合報股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "聯合報股份有限公司",
+              "length": 9,
+              "limit": 200,
+              "note": "可勾選「不顯示公司名稱」"
+            },
+            {
+              "label": "產業／規模",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有"
+            },
+            {
+              "label": "工作地點",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null
+            },
+            {
+              "label": "職務名稱",
+              "value": "前端工程師",
+              "length": 5,
+              "limit": 200
+            },
+            {
+              "label": "職務類別",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null,
+              "note": "必填；含全職／兼職"
+            },
+            {
+              "label": "任職期間",
+              "value": "2022/03 – 2026/03",
+              "length": 17,
+              "limit": null,
+              "note": "沒有結束日期時勾選「仍在職」"
+            },
+            {
+              "label": "工作描述",
+              "value": "負責線上課程平台前端開發，獨立完成「U 好學」並主導「一刻鯨選」前端架構。\n\n• 獨立完成「U 好學」前端開發並於 2026 年 1 月上線，以 Nuxt.js 實作課程試聽／試看與購物車結帳功能\n• 主導「一刻鯨選」前端架構，打造類電商課程銷售功能\n• 封裝影音播放器插件以提升產品擴展性\n• 重構並優化程式碼使載入速度提升約 3～5 倍\n• 主導 Webpack 遷移至 Vite，並將專案從 Vue 2 升級至 Vue 3\n• 導入 Tailwind CSS 提升開發效率與程式碼維護性",
+              "length": 246,
+              "limit": 2000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "工作技能",
+              "value": "Vue, Nuxt, Tailwind CSS, Vite, Webpack",
+              "list": [
+                "Vue",
+                "Nuxt",
+                "Tailwind CSS",
+                "Vite",
+                "Webpack"
+              ],
+              "length": 5,
+              "limit": 6,
+              "note": "上限 6 組（頁面計數器）"
+            }
+          ]
         },
-        "work.name": "聯合報股份有限公司",
-        "work.position": "前端工程師",
-        "work.start": {
-          "year": 2022,
-          "month": 3
+        {
+          "title": "讓狂人飛教育股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "讓狂人飛教育股份有限公司",
+              "length": 12,
+              "limit": 200,
+              "note": "可勾選「不顯示公司名稱」"
+            },
+            {
+              "label": "產業／規模",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有"
+            },
+            {
+              "label": "工作地點",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null
+            },
+            {
+              "label": "職務名稱",
+              "value": "網頁前端",
+              "length": 4,
+              "limit": 200
+            },
+            {
+              "label": "職務類別",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null,
+              "note": "必填；含全職／兼職"
+            },
+            {
+              "label": "任職期間",
+              "value": "2021/09 – 2021/12",
+              "length": 17,
+              "limit": null,
+              "note": "沒有結束日期時勾選「仍在職」"
+            },
+            {
+              "label": "工作描述",
+              "value": "以 Nuxt 重構 Joberfly 網站，模組化元件並導入 Tailwind CSS，開發新版首頁與履歷頁面。\n\n• 重構 Joberfly 網站程式碼並模組化元件\n• 導入 Tailwind CSS 開發全新首頁\n• 建立履歷頁面並實現響應式設計",
+              "length": 125,
+              "limit": 2000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "工作技能",
+              "value": "Nuxt, Tailwind CSS",
+              "list": [
+                "Nuxt",
+                "Tailwind CSS"
+              ],
+              "length": 2,
+              "limit": 6,
+              "note": "上限 6 組（頁面計數器）"
+            }
+          ]
         },
-        "work.end": {
-          "year": 2026,
-          "month": 3
+        {
+          "title": "佳音事業股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "佳音事業股份有限公司",
+              "length": 10,
+              "limit": 200,
+              "note": "可勾選「不顯示公司名稱」"
+            },
+            {
+              "label": "產業／規模",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有"
+            },
+            {
+              "label": "工作地點",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null
+            },
+            {
+              "label": "職務名稱",
+              "value": "網頁設計師",
+              "length": 5,
+              "limit": 200
+            },
+            {
+              "label": "職務類別",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null,
+              "note": "必填；含全職／兼職"
+            },
+            {
+              "label": "任職期間",
+              "value": "2020/03 – 2021/08",
+              "length": 17,
+              "limit": null,
+              "note": "沒有結束日期時勾選「仍在職」"
+            },
+            {
+              "label": "工作描述",
+              "value": "製作活動網頁與後台 CMS，並以 Vue.js 參與部分專案開發；負責切版、動畫與 UI/UX 優化，與團隊協作串接 API，並以 Git flow 管理版本。\n\n• 製作活動網頁與撰寫 CMS\n• 實現前端切版動畫與 UI/UX 設計優化\n• 協作進行 API 串接與 Git flow 管理",
+              "length": 147,
+              "limit": 2000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "工作技能",
+              "value": "Vue, Git, Git flow",
+              "list": [
+                "Vue",
+                "Git",
+                "Git flow"
+              ],
+              "length": 3,
+              "limit": 6,
+              "note": "上限 6 組（頁面計數器）"
+            }
+          ]
         },
-        "work.current": false,
-        "work.description": "負責線上課程平台前端開發，獨立完成「U 好學」並主導「一刻鯨選」前端架構。\n\n• 獨立完成「U 好學」前端開發並於 2026 年 1 月上線，以 Nuxt.js 實作課程試聽／試看與購物車結帳功能\n• 主導「一刻鯨選」前端架構，打造類電商課程銷售功能\n• 封裝影音播放器插件以提升產品擴展性\n• 重構並優化程式碼使載入速度提升約 3～5 倍\n• 主導 Webpack 遷移至 Vite，並將專案從 Vue 2 升級至 Vue 3\n• 導入 Tailwind CSS 提升開發效率與程式碼維護性",
-        "work.skills": [
-          "Vue",
-          "Nuxt",
-          "Tailwind CSS",
-          "Vite",
-          "Webpack"
-        ]
-      },
-      {
-        "match": {
-          "name": "讓狂人飛教育股份有限公司",
-          "startDate": "2021-09"
+        {
+          "title": "原聚股份有限公司",
+          "fields": [
+            {
+              "label": "公司名稱",
+              "value": "原聚股份有限公司",
+              "length": 8,
+              "limit": 200,
+              "note": "可勾選「不顯示公司名稱」"
+            },
+            {
+              "label": "產業／規模",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有"
+            },
+            {
+              "label": "工作地點",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null
+            },
+            {
+              "label": "職務名稱",
+              "value": "平面設計師",
+              "length": 5,
+              "limit": 200
+            },
+            {
+              "label": "職務類別",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": null,
+              "note": "必填；含全職／兼職"
+            },
+            {
+              "label": "任職期間",
+              "value": "2019/01 – 2019/06",
+              "length": 17,
+              "limit": null,
+              "note": "沒有結束日期時勾選「仍在職」"
+            },
+            {
+              "label": "工作描述",
+              "value": "負責品牌手冊、店面視覺與廣宣素材設計，並管理設計外包、協助店面與數位行銷活動。\n\n• 設計品牌手冊及店面視覺設定\n• 管理廣宣素材與設計外包\n• 協助店面行銷活動與數位行銷管理",
+              "length": 88,
+              "limit": 2000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "工作技能",
+              "missing": true,
+              "value": "",
+              "list": [],
+              "length": 0,
+              "limit": 6,
+              "note": "上限 6 組（頁面計數器）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "學歷",
+      "items": [
+        {
+          "title": "東海大學",
+          "fields": [
+            {
+              "label": "學校名稱",
+              "value": "東海大學",
+              "length": 4,
+              "limit": 200,
+              "note": "第一筆被系統當作最高學歷"
+            },
+            {
+              "label": "學歷",
+              "value": "學士",
+              "length": 2,
+              "limit": null,
+              "note": "下拉：博士、碩士、大學、四技、二技、二專、三專、五專、高中、高職、國中(含)以下"
+            },
+            {
+              "label": "科系名稱",
+              "value": "工業設計",
+              "length": 4,
+              "limit": 200
+            },
+            {
+              "label": "就學狀態",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有；畢業／肄業／就學中"
+            },
+            {
+              "label": "學校地區",
+              "missing": true,
+              "limit": null,
+              "note": "原始資料沒有；台灣／國外"
+            },
+            {
+              "label": "就學期間",
+              "value": "2013 – 2017",
+              "length": 11,
+              "limit": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "專長",
+      "items": [
+        {
+          "title": "前端框架",
+          "fields": [
+            {
+              "label": "專長名稱",
+              "value": "前端框架",
+              "length": 4,
+              "limit": 200
+            },
+            {
+              "label": "專長描述",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": 1000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "專長特色",
+              "value": "Vue, Nuxt, React",
+              "list": [
+                "Vue",
+                "Nuxt",
+                "React"
+              ],
+              "length": 3,
+              "limit": 10,
+              "note": "上限 10 組（頁面計數器）；單一標籤 40 字（maxlength）"
+            }
+          ]
         },
-        "work.name": "讓狂人飛教育股份有限公司",
-        "work.position": "網頁前端",
-        "work.start": {
-          "year": 2021,
-          "month": 9
+        {
+          "title": "CSS 工具",
+          "fields": [
+            {
+              "label": "專長名稱",
+              "value": "CSS 工具",
+              "length": 6,
+              "limit": 200
+            },
+            {
+              "label": "專長描述",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": 1000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "專長特色",
+              "value": "Tailwind CSS, Bootstrap",
+              "list": [
+                "Tailwind CSS",
+                "Bootstrap"
+              ],
+              "length": 2,
+              "limit": 10,
+              "note": "上限 10 組（頁面計數器）；單一標籤 40 字（maxlength）"
+            }
+          ]
         },
-        "work.end": {
-          "year": 2021,
-          "month": 12
+        {
+          "title": "工具與流程",
+          "fields": [
+            {
+              "label": "專長名稱",
+              "value": "工具與流程",
+              "length": 5,
+              "limit": 200
+            },
+            {
+              "label": "專長描述",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": 1000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "專長特色",
+              "value": "Vite, Webpack, Git, Git flow, GitHub flow",
+              "list": [
+                "Vite",
+                "Webpack",
+                "Git",
+                "Git flow",
+                "GitHub flow"
+              ],
+              "length": 5,
+              "limit": 10,
+              "note": "上限 10 組（頁面計數器）；單一標籤 40 字（maxlength）"
+            }
+          ]
         },
-        "work.current": false,
-        "work.description": "以 Nuxt 重構 Joberfly 網站，模組化元件並導入 Tailwind CSS，開發新版首頁與履歷頁面。\n\n• 重構 Joberfly 網站程式碼並模組化元件\n• 導入 Tailwind CSS 開發全新首頁\n• 建立履歷頁面並實現響應式設計",
-        "work.skills": [
-          "Nuxt",
-          "Tailwind CSS"
-        ]
-      },
-      {
-        "match": {
-          "name": "佳音事業股份有限公司",
-          "startDate": "2020-03"
+        {
+          "title": "程式語言",
+          "fields": [
+            {
+              "label": "專長名稱",
+              "value": "程式語言",
+              "length": 4,
+              "limit": 200
+            },
+            {
+              "label": "專長描述",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": 1000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "專長特色",
+              "value": "JavaScript, TypeScript, Python",
+              "list": [
+                "JavaScript",
+                "TypeScript",
+                "Python"
+              ],
+              "length": 3,
+              "limit": 10,
+              "note": "上限 10 組（頁面計數器）；單一標籤 40 字（maxlength）"
+            }
+          ]
         },
-        "work.name": "佳音事業股份有限公司",
-        "work.position": "網頁設計師",
-        "work.start": {
-          "year": 2020,
-          "month": 3
+        {
+          "title": "設計工具",
+          "fields": [
+            {
+              "label": "專長名稱",
+              "value": "設計工具",
+              "length": 4,
+              "limit": 200
+            },
+            {
+              "label": "專長描述",
+              "missing": true,
+              "value": "",
+              "length": 0,
+              "limit": 1000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "專長特色",
+              "value": "Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator",
+              "list": [
+                "Figma",
+                "Adobe XD",
+                "Adobe Photoshop",
+                "Adobe Illustrator"
+              ],
+              "length": 4,
+              "limit": 10,
+              "note": "上限 10 組（頁面計數器）；單一標籤 40 字（maxlength）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "語文能力",
+      "items": [
+        {
+          "title": "中文",
+          "fields": [
+            {
+              "label": "語言",
+              "value": "中文",
+              "length": 2,
+              "limit": null
+            },
+            {
+              "label": "聽／說／讀／寫",
+              "value": "母語",
+              "length": 2,
+              "limit": null,
+              "note": "四項分開選；選項：不會、略懂、中等、精通"
+            }
+          ]
         },
-        "work.end": {
-          "year": 2021,
-          "month": 8
-        },
-        "work.current": false,
-        "work.description": "製作活動網頁與後台 CMS，並以 Vue.js 參與部分專案開發；負責切版、動畫與 UI/UX 優化，與團隊協作串接 API，並以 Git flow 管理版本。\n\n• 製作活動網頁與撰寫 CMS\n• 實現前端切版動畫與 UI/UX 設計優化\n• 協作進行 API 串接與 Git flow 管理",
-        "work.skills": [
-          "Vue",
-          "Git",
-          "Git flow"
-        ]
-      },
-      {
-        "match": {
-          "name": "原聚股份有限公司",
-          "startDate": "2019-01"
-        },
-        "work.name": "原聚股份有限公司",
-        "work.position": "平面設計師",
-        "work.start": {
-          "year": 2019,
-          "month": 1
-        },
-        "work.end": {
-          "year": 2019,
-          "month": 6
-        },
-        "work.current": false,
-        "work.description": "負責品牌手冊、店面視覺與廣宣素材設計，並管理設計外包、協助店面與數位行銷活動。\n\n• 設計品牌手冊及店面視覺設定\n• 管理廣宣素材與設計外包\n• 協助店面行銷活動與數位行銷管理",
-        "work.skills": []
-      }
-    ]
-  }
+        {
+          "title": "English",
+          "fields": [
+            {
+              "label": "語言",
+              "value": "English",
+              "length": 7,
+              "limit": null
+            },
+            {
+              "label": "聽／說／讀／寫",
+              "value": "中等 / 日常對話",
+              "length": 9,
+              "limit": null,
+              "note": "四項分開選；選項：不會、略懂、中等、精通"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "自傳",
+      "items": [
+        {
+          "title": null,
+          "fields": [
+            {
+              "label": "中文自傳",
+              "value": "專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
+              "length": 170,
+              "limit": 4000,
+              "note": "上限取自頁面計數器"
+            },
+            {
+              "label": "英文自傳",
+              "value": "Frontend Engineer specializing in Vue.js, Nuxt, and Tailwind CSS, with a background in industrial design and a strong eye for visual detail and user experience. Independently built the frontend of a course sales platform, led the upgrade from Vue 2 to Vue 3 and the migration from Webpack to Vite, and refactored code to make pages load about 3–5x faster. Recently, I've been building a personal homelab with Raspberry Pi and exploring workflow automation with n8n.",
+              "length": 465,
+              "limit": 8000,
+              "note": "上限取自頁面計數器"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
