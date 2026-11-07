@@ -1,0 +1,99 @@
+{
+  "platform": "104",
+  "lang": "zh",
+  "dataCommit": "669cf09",
+  "fields": {
+    "bio.zh": "專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與使用者體驗。曾獨立完成課程銷售平台前端，主導 Vue 2 升級至 Vue 3 與 Webpack 遷移至 Vite，並透過重構使載入速度提升約 3～5 倍。近期以 Raspberry Pi 建置個人 Homelab，運用 n8n 探索工作流程自動化。",
+    "work": [
+      {
+        "match": {
+          "name": "聯合報股份有限公司",
+          "startDate": "2022-03"
+        },
+        "work.name": "聯合報股份有限公司",
+        "work.position": "前端工程師",
+        "work.start": {
+          "year": 2022,
+          "month": 3
+        },
+        "work.end": {
+          "year": 2026,
+          "month": 3
+        },
+        "work.current": false,
+        "work.description": "負責線上課程平台前端開發，獨立完成「U 好學」並主導「一刻鯨選」前端架構。\n\n• 獨立完成「U 好學」前端開發並於 2026 年 1 月上線，以 Nuxt.js 實作課程試聽／試看與購物車結帳功能\n• 主導「一刻鯨選」前端架構，打造類電商課程銷售功能\n• 封裝影音播放器插件以提升產品擴展性\n• 重構並優化程式碼使載入速度提升約 3～5 倍\n• 主導 Webpack 遷移至 Vite，並將專案從 Vue 2 升級至 Vue 3\n• 導入 Tailwind CSS 提升開發效率與程式碼維護性",
+        "work.skills": [
+          "Vue",
+          "Nuxt",
+          "Tailwind CSS",
+          "Vite",
+          "Webpack"
+        ]
+      },
+      {
+        "match": {
+          "name": "讓狂人飛教育股份有限公司",
+          "startDate": "2021-09"
+        },
+        "work.name": "讓狂人飛教育股份有限公司",
+        "work.position": "網頁前端",
+        "work.start": {
+          "year": 2021,
+          "month": 9
+        },
+        "work.end": {
+          "year": 2021,
+          "month": 12
+        },
+        "work.current": false,
+        "work.description": "以 Nuxt 重構 Joberfly 網站，模組化元件並導入 Tailwind CSS，開發新版首頁與履歷頁面。\n\n• 重構 Joberfly 網站程式碼並模組化元件\n• 導入 Tailwind CSS 開發全新首頁\n• 建立履歷頁面並實現響應式設計",
+        "work.skills": [
+          "Nuxt",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "match": {
+          "name": "佳音事業股份有限公司",
+          "startDate": "2020-03"
+        },
+        "work.name": "佳音事業股份有限公司",
+        "work.position": "網頁設計師",
+        "work.start": {
+          "year": 2020,
+          "month": 3
+        },
+        "work.end": {
+          "year": 2021,
+          "month": 8
+        },
+        "work.current": false,
+        "work.description": "製作活動網頁與後台 CMS，並以 Vue.js 參與部分專案開發；負責切版、動畫與 UI/UX 優化，與團隊協作串接 API，並以 Git flow 管理版本。\n\n• 製作活動網頁與撰寫 CMS\n• 實現前端切版動畫與 UI/UX 設計優化\n• 協作進行 API 串接與 Git flow 管理",
+        "work.skills": [
+          "Vue",
+          "Git",
+          "Git flow"
+        ]
+      },
+      {
+        "match": {
+          "name": "原聚股份有限公司",
+          "startDate": "2019-01"
+        },
+        "work.name": "原聚股份有限公司",
+        "work.position": "平面設計師",
+        "work.start": {
+          "year": 2019,
+          "month": 1
+        },
+        "work.end": {
+          "year": 2019,
+          "month": 6
+        },
+        "work.current": false,
+        "work.description": "負責品牌手冊、店面視覺與廣宣素材設計，並管理設計外包、協助店面與數位行銷活動。\n\n• 設計品牌手冊及店面視覺設定\n• 管理廣宣素材與設計外包\n• 協助店面行銷活動與數位行銷管理",
+        "work.skills": []
+      }
+    ]
+  }
+}

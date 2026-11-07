@@ -1,0 +1,101 @@
+{
+  "platform": "104",
+  "lang": "en",
+  "dataCommit": "669cf09",
+  "fields": {
+    "bio.en": "Frontend Engineer specializing in Vue.js, Nuxt, and Tailwind CSS, with a background in industrial design and a strong eye for visual detail and user experience. Independently built the frontend of a course sales platform, led the upgrade from Vue 2 to Vue 3 and the migration from Webpack to Vite, and refactored code to make pages load about 3–5x faster. Recently, I've been building a personal homelab with Raspberry Pi and exploring workflow automation with n8n.",
+    "work": [
+      {
+        "match": {
+          "name": "United Daily News Co., Ltd.",
+          "startDate": "2022-03"
+        },
+        "work.name": "United Daily News Co., Ltd.",
+        "work.position": "Frontend Engineer",
+        "work.start": {
+          "year": 2022,
+          "month": 3
+        },
+        "work.end": {
+          "year": 2026,
+          "month": 3
+        },
+        "work.current": false,
+        "work.description": "Owned frontend development for online course platforms: built 'U Haoxue (U 好學)' solo and led the frontend architecture of 'Yike Jingxuan (一刻鯨選)'.\n\n• Sole frontend developer of 'U Haoxue (U 好學)', delivering course preview and checkout features with Nuxt.js; launched January 2026\n• Led frontend architecture of 'Yike Jingxuan (一刻鯨選)', building e-commerce-like course sales functionality\n• Encapsulated a video player plugin to enhance product extensibility\n• Refactored and optimized code, cutting load times by roughly 3–5x\n• Led the migration from Webpack to Vite and the upgrade from Vue 2 to Vue 3\n• Integrated Tailwind CSS to enhance development efficiency and code maintainability",
+        "work.skills": [
+          "Vue",
+          "Nuxt",
+          "Tailwind CSS",
+          "Vite",
+          "Webpack"
+        ]
+      },
+      {
+        "match": {
+          "name": "FlyingCrazyer Co., Ltd.",
+          "startDate": "2021-09"
+        },
+        "work.name": "FlyingCrazyer Co., Ltd.",
+        "work.position": "Frontend Engineer",
+        "work.start": {
+          "year": 2021,
+          "month": 9
+        },
+        "work.end": {
+          "year": 2021,
+          "month": 12
+        },
+        "work.current": false,
+        "work.description": "Rebuilt the 'Joberfly' website with Nuxt, modularizing components, introducing Tailwind CSS, and developing a new homepage and resume page.\n\n• Refactored Joberfly website code and modularized components\n• Introduced Tailwind CSS to build a new homepage\n• Built a resume page with responsive design",
+        "work.skills": [
+          "Nuxt",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "match": {
+          "name": "JOY EDUCATION LTD.",
+          "startDate": "2020-03"
+        },
+        "work.name": "JOY EDUCATION LTD.",
+        "work.position": "Web Designer",
+        "work.start": {
+          "year": 2020,
+          "month": 3
+        },
+        "work.end": {
+          "year": 2021,
+          "month": 8
+        },
+        "work.current": false,
+        "work.description": "Built event webpages and a backend CMS, and contributed to several Vue.js projects; handled layout, animations, and UI/UX refinements, worked with the team on API integration, and used Git flow for version control.\n\n• Created event webpages and wrote CMS\n• Implemented frontend layout animations and UI/UX design optimization\n• Collaborated on API integration and Git flow management",
+        "work.skills": [
+          "Vue",
+          "Git",
+          "Git flow"
+        ]
+      },
+      {
+        "match": {
+          "name": "Yuanju Co., Ltd. (原聚股份有限公司)",
+          "startDate": "2019-01"
+        },
+        "work.name": "Yuanju Co., Ltd. (原聚股份有限公司)",
+        "work.position": "Graphic Designer",
+        "work.start": {
+          "year": 2019,
+          "month": 1
+        },
+        "work.end": {
+          "year": 2019,
+          "month": 6
+        },
+        "work.current": false,
+        "work.description": "Designed brand manuals, store visuals, and promotional materials; managed design outsourcing and supported in-store and digital marketing campaigns.\n\n• Designed brand manuals and store visual setups\n• Managed promotional materials and design outsourcing\n• Assisted in in-store marketing campaigns and digital marketing management",
+        "work.skills": [
+          "Git"
+        ]
+      }
+    ]
+  }
+}

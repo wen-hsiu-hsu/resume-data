@@ -1,0 +1,8 @@
+{
+  "name": "resume-data-sync",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node sync/sync.mjs"
+  }
+}

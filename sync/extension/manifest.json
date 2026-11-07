@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "resume-sync",
+  "version": "0.1.0",
+  "description": "把本地履歷資料比對並填入求職平台編輯頁（只填欄位，儲存由使用者按）。設計見 docs/sync-script.md。",
+  "host_permissions": ["https://pda.104.com.tw/*"],
+  "background": { "service_worker": "bg.js" },
+  "content_scripts": [
+    { "matches": ["https://pda.104.com.tw/*"], "js": ["bridge.js"], "run_at": "document_idle" },
+    { "matches": ["https://pda.104.com.tw/*"], "js": ["104.page.js"], "run_at": "document_idle", "world": "MAIN" }
+  ]
+}
