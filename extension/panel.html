@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>履歷複製面板</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="tabs">
+        <button data-tab="platform" class="active">本站資料</button>
+        <button data-tab="source">原始資料</button>
+      </nav>
+      <div class="controls">
+        <select id="platform" aria-label="平台"></select>
+        <div class="lang" role="group" aria-label="語言">
+          <button data-lang="zh" class="active">中</button>
+          <button data-lang="en">英</button>
+        </div>
+        <button id="reload" title="重新抓取資料">↻</button>
+      </div>
+      <p id="meta"></p>
+    </header>
+    <main id="content"><p class="status">載入中…</p></main>
+    <div id="toast" role="status"></div>
+    <script src="panel.js"></script>
+  </body>
+</html>

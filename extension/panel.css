@@ -1,0 +1,55 @@
+:root {
+  color-scheme: light dark;
+  --muted: #888;
+  --line: color-mix(in srgb, currentColor 15%, transparent);
+  --accent: #2b6cb0;
+  --warn: #c05621;
+  font: 13px/1.5 system-ui, -apple-system, "PingFang TC", sans-serif;
+}
+body { margin: 0; }
+header {
+  position: sticky; top: 0; z-index: 1;
+  background: Canvas; border-bottom: 1px solid var(--line);
+  padding: 8px 12px;
+}
+.tabs, .controls, .lang { display: flex; gap: 6px; align-items: center; }
+.controls { margin-top: 6px; }
+button, select { font: inherit; }
+button {
+  border: 1px solid var(--line); background: transparent; color: inherit;
+  border-radius: 4px; padding: 2px 8px; cursor: pointer;
+}
+button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+select { flex: 1; }
+#meta { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+main { padding: 4px 12px 40px; }
+h2 { font-size: 15px; margin: 18px 0 6px; }
+h3 { font-size: 13px; margin: 12px 0 4px; color: var(--accent); }
+.field { border-top: 1px solid var(--line); padding: 6px 0; }
+.field-head { display: flex; gap: 8px; align-items: baseline; }
+.label { font-weight: 600; }
+.count { color: var(--muted); font-size: 12px; }
+.count.over { color: var(--warn); font-weight: 600; }
+.field-head .copy { margin-left: auto; }
+.note { color: var(--muted); font-size: 12px; margin: 2px 0; word-break: break-all; }
+pre {
+  margin: 4px 0 0; white-space: pre-wrap; word-break: break-word;
+  font: inherit; background: color-mix(in srgb, currentColor 5%, transparent);
+  padding: 6px 8px; border-radius: 4px;
+}
+.missing { color: var(--muted); font-style: italic; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.chips button { font-size: 12px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.pair > div { min-width: 0; }
+.tag { color: var(--muted); font-size: 11px; }
+.path { font-family: ui-monospace, monospace; font-size: 12px; }
+.status { color: var(--muted); }
+.error { color: var(--warn); }
+#toast {
+  position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%);
+  background: #333; color: #fff; padding: 4px 12px; border-radius: 4px;
+  opacity: 0; transition: opacity .2s; pointer-events: none;
+}
+#toast.show { opacity: 1; }
+[hidden] { display: none !important; }

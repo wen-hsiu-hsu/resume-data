@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "履歷複製面板",
+  "version": "1.0.0",
+  "description": "在獨立視窗顯示 d.resume.hsiu.soy 的履歷資料，按一下就複製，由使用者自己貼到求職平台。",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://d.resume.hsiu.soy/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "履歷複製面板" }
+}

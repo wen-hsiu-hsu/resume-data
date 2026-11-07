@@ -1,0 +1,31 @@
+[
+  {
+    "id": "104",
+    "platform": "104",
+    "hosts": [
+      "pda.104.com.tw"
+    ]
+  },
+  {
+    "id": "cakeresume",
+    "platform": "CakeResume",
+    "hosts": [
+      "www.cake.me",
+      "www.cakeresume.com"
+    ]
+  },
+  {
+    "id": "linkedin",
+    "platform": "LinkedIn",
+    "hosts": [
+      "www.linkedin.com"
+    ]
+  },
+  {
+    "id": "yourator",
+    "platform": "Yourator",
+    "hosts": [
+      "www.yourator.co"
+    ]
+  }
+]

@@ -184,6 +184,14 @@ for (const file of specFiles) {
   }
 }
 
+// 給擴充功能用的平台清單
+const index = specFiles.map((file) => {
+  const spec = readJson(`specs/${file}`);
+  return { id: file.replace(/\.json$/, ''), platform: spec.platform, hosts: spec.hosts };
+});
+writeFileSync(`${root}output/index.json`, toJson(index));
+written.add('index.json');
+
 // 規格已刪除的平台，產出也一併刪掉
 for (const f of readdirSync(`${root}output`)) {
   if (!written.has(f)) rmSync(`${root}output/${f}`);
