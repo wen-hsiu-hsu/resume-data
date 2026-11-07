@@ -1,8 +1,6 @@
 {
-  "name": "resume-data-sync",
+  "name": "resume-data",
   "private": true,
   "type": "module",
-  "scripts": {
-    "sync": "node sync/sync.mjs"
-  }
+  "scripts": {}
 }
