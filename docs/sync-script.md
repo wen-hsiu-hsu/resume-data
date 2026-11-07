@@ -4,8 +4,8 @@
 
 ## 流程
 
-1. 使用者執行 `npm run sync -- 104`，腳本用 Playwright 開啟一個專用 Chrome profile 的分頁，連到該平台的履歷頁。
-2. 使用者自己登入（104 要手機驗證碼），進到編輯頁。
+1. 使用者執行 `npm run sync -- 104`，腳本把本地資料複製進擴充功能，並用使用者平常的 Chrome 打開履歷編輯頁。
+2. 使用者自己登入（104 要手機驗證碼），進到編輯頁，右側出現同步面板。
 3. 使用者在面板上按「比對」。沒有打開任何表單時，清單畫面就顯示所有已填的內容，腳本一次讀完整頁，與本地資料比對。
 4. 面板依區塊列出差異（頁面值 vs 本地值），頁面上對應的清單項目加黃框。多筆區塊另外列出「本地有、頁面沒有」和「頁面有、本地沒有」的項目。
 5. 使用者對有差異的那一筆按「打開並同步」，腳本 hover 該卡片、點「編輯」打開表單；對「本地有、頁面沒有」的項目按「新增到頁面」，腳本點「新增」打開空白表單。一次只能打開一筆。
@@ -83,10 +83,15 @@
 
 ## 技術選擇
 
-- Node + Playwright，`launchPersistentContext` 搭配 `channel: 'chrome'`。
-- Chrome profile 放在 repo 外（`~/.resume-sync/chrome-profile`），裡面有登入 cookie，不可以放進 repo。
-- **假設，要先驗證**：在 Playwright 開的 Chrome 裡，104 的登入與手機驗證可以正常完成，而且重新開啟後登入狀態還在。第一個實作步驟就是驗證這點；不行的話改用 Chrome 擴充功能或 userscript，再回來討論。
-- 面板和比對邏輯用 `page.addInitScript` 注入，所有寫入都在頁面內執行，由面板按鈕觸發。
+- **Chrome 擴充功能（未封裝，MV3）**，放在 `sync/extension/`，在使用者平常用的 Chrome 執行。使用者在 `chrome://extensions` 開啟開發人員模式，「載入未封裝項目」選 `sync/extension/`，只要做一次。
+- 不用 Playwright：2026-11-07 驗證過，104 會把 Playwright 開的 Chrome 擋在 104 自己的錯誤頁，連首頁都打不開。不要用繞過偵測的方式處理。
+- `npm run sync -- <平台>`：把 `output/<平台>.<zh|en>.json` 和 `private.json` 複製到 `sync/extension/data/`（列入 `.gitignore`），再用 `open -a "Google Chrome"` 打開平台編輯頁。
+- 擴充功能分三個檔：
+  - `bg.js`：service worker，讀取 `data/` 裡的 JSON。
+  - `bridge.js`：隔離環境的 content script，轉送資料。
+  - `104.page.js`：以 `world: "MAIN"` 執行的面板、比對與寫入。必須跑在頁面環境，才讀得到 `.ql-container.__quill`。
+- 頁面環境和隔離環境之間用 `window.postMessage` 傳資料。每次按「比對」都會重讀，所以改了 `output/` 後重跑 `npm run sync` 就好，不用重新載入擴充功能。
+- 權限只開 `https://pda.104.com.tw/*`。
 
 ## 第一版範圍（104）
 
@@ -101,6 +106,14 @@
 | `bio.en` | 英文自傳 | `quill` |
 
 這些欄位的 selector 要先用 `/spec-update 104` 補進「編輯方式」表。
+
+## 驗證紀錄（2026-11-07，104 第二份履歷）
+
+- 清單比對：工作經驗（含隱藏公司名稱、仍在職、工作技能）與中英文自傳都能正確讀取與對應。
+- 寫入後按儲存、重新比對都一致：公司名稱、職務名稱（`input`）、工作描述、中英文自傳（`quill`，存成 `<p>` 段落）、開始／結束年月（`input`＋`dropdown`）、仍在職（`checkbox`）、工作技能新增（`tags`）。
+- 「打開並同步」（點編輯）和「新增到頁面」（點新增）都正常。
+- 尚未驗證：刪除工作技能標籤。
+- 已知陷阱：104 的「職務類別」是必填，不在本地資料裡，要手動選；面板會列出 104 的必填錯誤。「不顯示公司名稱」是隱私設定，不同步。
 
 ## 驗收
 
