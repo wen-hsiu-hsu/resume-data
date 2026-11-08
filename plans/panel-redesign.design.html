@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>履歷複製面板</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2357d9}a:hover{color:#1a44ad}
+button{font:inherit;cursor:pointer}
+select{font:inherit}
+</style>
+</helmet>
+<div style="width: 420px; height: 760px; box-sizing: border-box; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.text}}; font-family: Inter, 'Noto Sans TC', system-ui, sans-serif; font-size: 13px; line-height: 1.5; overflow: hidden">
+
+  <header style="flex-shrink: 0; display: flex; flex-direction: column; gap: 10px; padding: 12px 14px 10px; background: {{t.surface}}; border-bottom: 1px solid {{t.line}}">
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div role="tablist" aria-label="資料來源" style="display: flex; gap: 2px; padding: 3px; border-radius: 9px; background: {{t.subtle}}">
+        <button role="tab" aria-selected="{{tabPlatformSel}}" onClick="{{toPlatform}}" style="border: 0; border-radius: 7px; padding: 6px 12px; font-weight: 600; background: {{tabPlatformBg}}; color: {{tabPlatformFg}}; box-shadow: {{tabPlatformShadow}}">本站資料</button>
+        <button role="tab" aria-selected="{{tabSourceSel}}" onClick="{{toSource}}" style="border: 0; border-radius: 7px; padding: 6px 12px; font-weight: 600; background: {{tabSourceBg}}; color: {{tabSourceFg}}; box-shadow: {{tabSourceShadow}}">原始資料</button>
+      </div>
+      <div style="flex-grow: 1"></div>
+      <button aria-label="重新抓取資料" title="重新抓取資料" style="width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border: 1px solid {{t.line}}; border-radius: 8px; background: transparent; color: {{t.muted}}">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"></path><path d="M21 4v5h-5"></path></svg>
+      </button>
+    </div>
+
+    <sc-if value="{{onPlatform}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; align-items: center; gap: 8px">
+        <label style="flex-grow: 1; display: flex; align-items: center; gap: 8px; height: 34px; padding: 0 10px; border: 1px solid {{t.line}}; border-radius: 8px; background: {{t.bg}}">
+          <span style="font-size: 12px; color: {{t.muted}}">平台</span>
+          <select aria-label="平台" style="flex-grow: 1; border: 0; background: transparent; color: {{t.text}}; font-weight: 600; outline: none">
+            <option>104</option>
+            <option>CakeResume</option>
+            <option>LinkedIn</option>
+            <option>Yourator</option>
+          </select>
+        </label>
+        <div role="group" aria-label="語言" style="display: flex; gap: 2px; padding: 3px; border-radius: 9px; background: {{t.subtle}}">
+          <button aria-pressed="{{zhSel}}" onClick="{{toZh}}" style="border: 0; border-radius: 7px; min-width: 36px; padding: 5px 8px; font-weight: 600; background: {{zhBg}}; color: {{zhFg}}">中</button>
+          <button aria-pressed="{{enSel}}" onClick="{{toEn}}" style="border: 0; border-radius: 7px; min-width: 36px; padding: 5px 8px; font-weight: 600; background: {{enBg}}; color: {{enFg}}">EN</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: {{t.muted}}">
+      <span style="width: 6px; height: 6px; border-radius: 3px; background: {{t.ok}}"></span>
+      <span>{{meta}}</span>
+    </div>
+  </header>
+
+  <sc-if value="{{onPlatform}}" hint-placeholder-val="{{ true }}">
+    <nav aria-label="區段" style="flex-shrink: 0; display: flex; flex-wrap: nowrap; align-items: center; gap: 6px; padding: 8px 14px; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; border-bottom: 1px solid {{t.line}}; background: {{t.bg}}">
+      <sc-for list="{{sections}}" as="s" hint-placeholder-count="5">
+        <a href="#{{s.id}}" style="flex-shrink: 0; display: inline-flex; align-items: center; height: 28px; box-sizing: border-box; line-height: 1; padding: 0 12px; border-radius: 999px; border: 1px solid {{t.line}}; color: {{t.text}}; text-decoration: none; font-size: 12px; white-space: nowrap">{{s.name}}</a>
+      </sc-for>
+    </nav>
+  </sc-if>
+
+  <main style="flex-grow: 1; overflow-y: auto; padding: 4px 14px 24px; display: flex; flex-direction: column; gap: 18px">
+
+    <sc-if value="{{onPlatform}}" hint-placeholder-val="{{ true }}">
+      <sc-for list="{{sections}}" as="s" hint-placeholder-count="5">
+        <section id="{{s.id}}" style="display: flex; flex-direction: column; gap: 8px; padding-top: 12px">
+          <h2 style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .04em; color: {{t.muted}}">{{s.name}}</h2>
+          <sc-for list="{{s.items}}" as="item" hint-placeholder-count="1">
+            <div style="border: 1px solid {{t.line}}; border-radius: 10px; background: {{t.surface}}; overflow: hidden">
+              <sc-if value="{{item.title}}" hint-placeholder-val="{{ false }}">
+                <h3 style="margin: 0; padding: 10px 14px 0; font-size: 14px; font-weight: 600">{{item.title}}</h3>
+              </sc-if>
+              <sc-for list="{{item.fields}}" as="f" hint-placeholder-count="2">
+                <div style="display: flex; flex-direction: column; gap: 6px; padding: 10px 14px; border-top: {{f.divider}}">
+                  <div style="display: flex; align-items: center; gap: 8px">
+                    <span style="font-weight: 600">{{f.label}}</span>
+                    <sc-if value="{{f.count}}" hint-placeholder-val="{{ true }}">
+                      <span style="margin-left: auto; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-variant-numeric: tabular-nums; background: {{f.badgeBg}}; color: {{f.badgeFg}}">{{f.count}}</span>
+                    </sc-if>
+                  </div>
+                  <sc-if value="{{f.missing}}" hint-placeholder-val="{{ false }}">
+                    <div style="padding: 8px 10px; border: 1px dashed {{t.line}}; border-radius: 8px; color: {{t.muted}}; font-size: 12px">原始資料沒有，請在平台上自己填</div>
+                  </sc-if>
+                  <sc-if value="{{f.present}}" hint-placeholder-val="{{ true }}">
+                    <button onClick="{{f.copy}}" aria-label="複製{{f.label}}" style="display: flex; align-items: flex-start; gap: 10px; width: 100%; min-height: 40px; padding: 9px 10px; text-align: left; border: 1px solid {{f.boxLine}}; border-radius: 8px; background: {{f.boxBg}}; color: {{t.text}}">
+                      <span style="flex-grow: 1; min-width: 0; white-space: pre-wrap; word-break: break-word">{{f.value}}</span>
+                      <sc-if value="{{f.copied}}" hint-placeholder-val="{{ false }}">
+                        <span style="flex-shrink: 0; display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: {{t.ok}}">
+                          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>已複製
+                        </span>
+                      </sc-if>
+                      <sc-if value="{{f.idle}}" hint-placeholder-val="{{ true }}">
+                        <span style="flex-shrink: 0; display: flex; align-items: center; gap: 4px; font-size: 12px; color: {{t.accent}}">
+                          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>複製
+                        </span>
+                      </sc-if>
+                    </button>
+                  </sc-if>
+                  <sc-if value="{{f.hasChips}}" hint-placeholder-val="{{ false }}">
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px">
+                      <span style="font-size: 11px; color: {{t.muted}}; align-self: center">逐項複製</span>
+                      <sc-for list="{{f.chips}}" as="c" hint-placeholder-count="3">
+                        <button onClick="{{c.copy}}" style="padding: 4px 10px; border-radius: 999px; font-size: 12px; border: 1px solid {{c.line}}; background: {{c.bg}}; color: {{c.fg}}">{{c.text}}</button>
+                      </sc-for>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </sc-for>
+        </section>
+      </sc-for>
+    </sc-if>
+
+    <sc-if value="{{onSource}}" hint-placeholder-val="{{ false }}">
+      <section style="display: flex; flex-direction: column; gap: 8px; padding-top: 12px">
+        <h2 style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .04em; color: {{t.muted}}">basics</h2>
+        <sc-for list="{{leaves}}" as="l" hint-placeholder-count="2">
+          <div style="border: 1px solid {{t.line}}; border-radius: 10px; background: {{t.surface}}; padding: 10px 14px; display: flex; flex-direction: column; gap: 8px">
+            <code style="font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 12px; color: {{t.muted}}">{{l.path}}</code>
+            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+              <sc-for list="{{l.cols}}" as="c" hint-placeholder-count="2">
+                <button onClick="{{c.copy}}" aria-label="複製{{c.tag}}" style="display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 8px 10px; text-align: left; border: 1px solid {{c.boxLine}}; border-radius: 8px; background: {{c.boxBg}}; color: {{t.text}}">
+                  <span style="font-size: 11px; color: {{c.tagFg}}">{{c.tag}}</span>
+                  <span style="word-break: break-word">{{c.value}}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+    </sc-if>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"dark":{"editor":"boolean","default":false},"accent":{"editor":"color","default":"#2357d9","options":["#2357d9","#0f766e","#b4531a"]},"$preview":{"width":420,"height":760}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { tab: 'platform', lang: 'zh', copied: null };
+  }
+  copy(id) {
+    this.setState({ copied: id });
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => this.setState({ copied: null }), 1400);
+  }
+  renderVals() {
+    const dark = this.props.dark ?? false;
+    const accent = this.props.accent ?? '#2357d9';
+    const t = dark
+      ? { bg: '#15171b', surface: '#1d2026', line: '#2f333b', text: '#e8eaee', muted: '#9aa1ad', subtle: '#262a31', accent: '#8fb0ff', ok: '#4cc38a', warnBg: '#3a2415', warnFg: '#f3a46b', copiedBg: '#16301f' }
+      : { bg: '#f5f6f8', surface: '#ffffff', line: '#e2e5ea', text: '#1b1e24', muted: '#5f6673', subtle: '#eceef2', accent: accent, ok: '#1a7f4b', warnBg: '#fdf0e6', warnFg: '#a14a12', copiedBg: '#eaf6ef' };
+    const { tab, lang, copied } = this.state;
+    const seg = (on) => ({ bg: on ? t.surface : 'transparent', fg: on ? t.text : t.muted, shadow: on ? '0 1px 2px rgba(0,0,0,.12)' : 'none' });
+    const p = seg(tab === 'platform'), s = seg(tab === 'source');
+    const zh = seg(lang === 'zh'), en = seg(lang === 'en');
+
+    const field = (id, label, value, count, opts = {}) => {
+      const isCopied = copied === id;
+      const near = opts.near ?? false;
+      return {
+        label, value, count,
+        missing: value === null,
+        present: value !== null,
+        copied: isCopied,
+        idle: !isCopied,
+        divider: opts.first ? '0' : '1px solid ' + t.line,
+        badgeBg: near ? t.warnBg : t.subtle,
+        badgeFg: near ? t.warnFg : t.muted,
+        boxBg: isCopied ? t.copiedBg : t.bg,
+        boxLine: isCopied ? t.ok : t.line,
+        copy: () => this.copy(id),
+        hasChips: Boolean(opts.chips),
+        chips: (opts.chips ?? []).map((text) => {
+          const cid = id + ':' + text;
+          const on = copied === cid;
+          return { text, copy: () => this.copy(cid), bg: on ? t.copiedBg : t.surface, fg: on ? t.ok : t.text, line: on ? t.ok : t.line };
+        }),
+      };
+    };
+
+    const sections = [
+      { id: 'sec-basic', name: '基本資料', items: [{ title: null, fields: [
+        field('name', '姓名', '許文修', '3 字', { first: true }),
+        field('ename', '英文姓名', 'Wen-Hsiu Hsu', '12 字'),
+        field('email', 'E-mail', 'kevin.hsu.hws@gmail.com', '23 字'),
+      ] }] },
+      { id: 'sec-personal', name: '個人資料', items: [{ title: null, fields: [
+        field('military', '兵役狀況', null, null, { first: true }),
+        field('addr', '通訊地址', '新北市', '3 字'),
+      ] }] },
+      { id: 'sec-work', name: '工作經驗', items: [{ title: '聯合報股份有限公司', fields: [
+        field('w-co', '公司名稱', '聯合報股份有限公司', '9 / 200 字'),
+        field('w-ind', '產業／規模', null, null),
+      ] }] },
+      { id: 'sec-skill', name: '專長', items: [{ title: '前端框架', fields: [
+        field('sk-name', '專長名稱', '前端框架', '4 / 200 字'),
+        field('sk-tags', '專長特色', 'Vue, Nuxt, React', '3 / 10 項', { chips: ['Vue', 'Nuxt', 'React'] }),
+      ] }] },
+      { id: 'sec-bio', name: '自傳', items: [{ title: null, fields: [
+        field('bio', '中文自傳', '專精 Vue.js、Nuxt 與 Tailwind CSS，具工業設計背景，重視視覺細節與…', '170 / 4000 字', { first: true }),
+      ] }] },
+    ];
+
+    const col = (id, tag, value) => {
+      const on = copied === id;
+      return { tag, value, copy: () => this.copy(id), boxBg: on ? t.copiedBg : t.bg, boxLine: on ? t.ok : t.line, tagFg: on ? t.ok : t.muted };
+    };
+    const leaves = [
+      { path: 'name', cols: [col('src-name-zh', '中', '許文修'), col('src-name-en', '英', 'Wen-Hsiu Hsu')] },
+      { path: 'location.city', cols: [col('src-city-zh', '中', '新北市'), col('src-city-en', '英', 'New Taipei City')] },
+    ];
+
+    return {
+      t, sections, leaves,
+      onPlatform: tab === 'platform', onSource: tab === 'source',
+      tabPlatformSel: String(tab === 'platform'), tabSourceSel: String(tab === 'source'),
+      tabPlatformBg: p.bg, tabPlatformFg: p.fg, tabPlatformShadow: p.shadow,
+      tabSourceBg: s.bg, tabSourceFg: s.fg, tabSourceShadow: s.shadow,
+      zhSel: String(lang === 'zh'), enSel: String(lang === 'en'),
+      zhBg: zh.bg, zhFg: zh.fg, enBg: en.bg, enFg: en.fg,
+      meta: tab === 'platform' ? '104 · 規格最後確認 2026-11-07' : 'source/resume.json',
+      toPlatform: () => this.setState({ tab: 'platform' }),
+      toSource: () => this.setState({ tab: 'source' }),
+      toZh: () => this.setState({ lang: 'zh' }),
+      toEn: () => this.setState({ lang: 'en' }),
+    };
+  }
+}
+</script>
+</body>
+</html>
