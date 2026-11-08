@@ -21,16 +21,10 @@ Codex 與 Claude 共用這份規則；`CLAUDE.md` 只是匯入它。
 ## 求職平台
 
 - 任何工具都不可以在求職平台上輸入、儲存、送出或刪除；內容一律由使用者自己複製貼上。
-- LinkedIn 的使用者協議禁止自動化操作，連讀取頁面也不行。`extension/` 只能讀分頁網址來判斷預設平台，不可以在 linkedin.com 注入 content script，也不可以讀取或操作頁面內容；其他工具一律不碰 LinkedIn 頁面。
+- LinkedIn 的使用者協議禁止自動化操作，連讀取頁面也不行。任何工具都不碰 LinkedIn 頁面，也不要提議自動填表。
 - 104 會員規約第六條(八)禁止使用非 104 提供的自動化操作工具（https://accounts.104.com.tw/terms）。使用者已知情，決定自行承擔帳號風險，只允許 `/spec-update` 讀取欄位。
 - 104 會擋 Playwright 開的 Chrome。不要用 Playwright 開 104，也不要嘗試繞過偵測。
-- 104 的「職務類別」必填但原始檔沒有，面板顯示「原始資料沒有」；要寫入 `ext.jobCategory` 必須先經使用者確認。
-
-## 擴充功能 `extension/`
-
-- 改了 `extension/` 的程式，使用者要在 `chrome://extensions` 按 🔄 才會生效；只改資料按面板的 ↻ 即可。
-- 本機測面板：在 repo 根目錄跑 `python3 -m http.server 8765 --bind 127.0.0.1`，開 `http://127.0.0.1:8765/extension/panel.html?host=pda.104.com.tw`。這時面板讀 repo 裡的檔案，不讀網路。
-- 不加外部字型、外部 script 或任何 npm 依賴。
+- 104 的「職務類別」必填但原始檔沒有，貼 104 工作經驗時要提醒使用者自己選；要寫入 `ext.jobCategory` 必須先經使用者確認。
 
 ## 慣例
 
@@ -41,7 +35,7 @@ Codex 與 Claude 共用這份規則；`CLAUDE.md` 只是匯入它。
 
 角色：
 
-- **Claude**：只寫規劃書和審核報告，不改程式碼（`extension/`、`build/`）。資料照舊：`source/` 依使用者指示修改，`specs/` 透過 `/spec-update` 更新。
+- **Claude**：只寫規劃書和審核報告，不改程式碼（`build/`）。資料照舊：`source/` 依使用者指示修改，`specs/` 透過 `/spec-update` 更新。
 - **Codex**：只照規劃書或審核報告開發，不自行擴大範圍；規劃書沒寫清楚就停下來，在回報裡提問，不要猜。
 - **使用者**：核准規劃書，決定每一條審核意見要不要修，決定何時合併與 push。
 
