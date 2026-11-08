@@ -67,3 +67,33 @@
   - `node --check extension/panel.js`、`jq empty source/*.json data/*.json specs/*.json output/*.json`、`git diff --check` 通過。只修改 `panel.js` 與本輪回覆；沒有新增依賴或變更資料，既有未追蹤 `.serena/` 保留且不提交。
   - 測試腳本、結果與截圖位於 `/tmp/panel-redesign-round1*`，未納入 repo。
 - 待決定問題：無新增阻擋事項；仍待 Claude 審核與使用者執行 o17 的真實擴充功能測試。
+
+## 第 2 輪（2026-11-09，審核 `d48d935`）
+
+### 結果：通過
+
+- 只改了 `extension/panel.js` 和本報告的「Codex 回覆」。R1-1、R1-2 照「給 Codex」修正，R1-3 照決定沒有修。
+- Claude 實測：本機 server，360px，headless Chrome。
+
+| 操作 | 剪貼簿 | 回饋 |
+|---|---|---|
+| 英文姓名：拖曳，在框外 6px 放開 | `Wen-Hsiu Hsu` | 已複製選取的 12 字 ✅ |
+| 英文姓名：三擊 | `Wen-Hsiu Hsu`（沒有結尾換行） | 已複製選取的 12 字 ✅ |
+| 自傳（多行）：三擊 | 等於整個值，170 字 | ✅ |
+| 從英文姓名拖曳到 E-mail（跨欄） | 不變 | 沒有 ✅ |
+| 先雙擊選取英文姓名的一個詞，再按 E-mail 的「複製」 | E-mail 整個值 | 只有 E-mail 那欄亮 ✅ |
+
+- console 沒有錯誤。
+- Codex 回覆中的驗收結果和上面一致。
+
+### 發現
+
+無。
+
+### 給 Codex
+
+無。
+
+### Codex 回覆
+
+無須回覆。
