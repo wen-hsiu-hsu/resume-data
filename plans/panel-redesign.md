@@ -184,7 +184,23 @@
 
 ## 開發回報（Codex 填）
 
-- commit：
+- commit：本次提交 `feat: redesign panel with selection copying`，位於從 `main` 建立的 `feat/panel-redesign`。面板三個檔案與本回報一起提交；未合併、未 push。
 - 驗收結果（逐項，寫出實際看到的）：
+  1. 通過。本機 `host=pda.104.com.tw` 預設 104、`host=www.linkedin.com` 預設 LinkedIn，無 host 預設 104。只使用本機 URL 參數，沒有開啟任何求職平台。
+  2. 通過。本站資料有兩排控制項與 meta；原始資料隱藏整個第二排，meta 為 `source/resume.json`。分頁與語言按鈕的 ARIA 狀態同步更新。
+  3. 通過。104 七個捷徑逐一點擊，對應標題都未被 header 遮住。360px、480px 的捷徑維持 28px 高、不換行，放不下能橫向捲動；四個平台的中英文與原始資料分頁都會重建捷徑並回到內容頂端。
+  4. 通過。實際按鈕操作後讀取剪貼簿，內容等於整個值。原始資料的中、英欄位也各有獨立按鈕與狀態。
+  5. 通過。獨立 Chrome 的原生滑鼠拖曳得到 `en-Hs`、雙擊得到 `Wen`；雙擊後用 Shift＋方向鍵延伸為 `Wen-H`，實際剪貼簿均逐字相同，選取範圍仍保留。另以 DOM Range 檢查選取內的空白不會被 trim 掉。
+  6. 通過。跨兩欄、collapsed 與純空白的選取均未呼叫剪貼簿，也未產生新狀態。三擊英文姓名時，Chrome 的選取會包含區塊末尾換行，祖先落在 `pre` 外，因此依規定的範圍條件略過複製。
+  7. 通過。實際點擊 Vue chip，剪貼簿為 `Vue`；只有該 chip 變色，整欄值不變色。
+  8. 通過。狀態與值框在 1.4 秒後恢復；連續複製只保留最後一欄的狀態。另測試非同步請求完成順序顛倒與複製中切換分頁，不會復活舊狀態。模擬剪貼簿拒絕時就地顯示警告色「複製失敗」。HTML、CSS、JS 已移除 toast。
+  9. 通過。臨時將本機 `output/104.zh.json` 的前三欄設為 89／100、90／100、101／100（最後一欄 over），實際畫面分別為一般、接近、超過徽章；超過保留 ⚠️ 並加粗。另測 100／100 的接近邊界。測完以原始位元組還原，`git diff --exit-code -- output` 通過。
+  10. 通過。360px 與 480px、本站與原始資料、深淺色共八種畫面均截圖檢查；配色正常，無頁面橫向溢出，原始資料維持左右雙欄。
+  11. 通過。獨立測試瀏覽器未收到 console error／warning 或 pageerror。原始資料沒有 phone、birthDate、birthday、military 路徑；本站資料既有的私密欄位缺值提示保留，不含私密值。另逐段比對確認 `PRIVATE_KEYS`、`leaves`、`fetchJson`、`load`、`defaultPlatform`、onMessage 未變動。
+  12. 通過。`jq empty source/*.json data/*.json specs/*.json output/*.json`、`node --check extension/panel.js`、`git diff --check` 均通過。tracked 變更只有面板三檔與本回報；開工前已存在的未追蹤 `.serena/` 保留且未納入提交。
+  13. 通過。搜尋 `extension/panel.*` 的 HTTP(S) 網址，只有 `BASE` 的 `https://d.resume.hsiu.soy/`。
 - 與規劃書不同之處與原因：
-- 待使用者或 Claude 決定的問題：
+  - 產品範圍無變更；未新增依賴、權限或修改資料來源。
+  - DevTools MCP 在讀取實際剪貼簿時停住，後續改用環境已安裝的 Playwright 與獨立無頭 Chrome 完成原生操作、剪貼簿與色彩模擬驗收；全程只開本機測試頁。先以 DevTools 跑過基本失敗／成功檢查及 360px 淺色檢視。
+  - 自動驗收共 60 個斷言，測試頁、腳本、結果與截圖均放 `/tmp/panel-redesign-*`，沒有納入 repo。只有面板靜態檔案變更，未執行會產生資料與 logs 的 `npm run build`。
+- 待使用者或 Claude 決定的問題：無新增阻擋事項。仍須依流程由 Claude 審核；o17 的真實擴充功能重載、跨頁預設平台、貼到平台與視窗記憶由使用者實測。三擊選取仍受上述 `pre` 範圍條件限制。
