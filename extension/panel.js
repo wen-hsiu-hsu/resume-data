@@ -73,20 +73,31 @@ const copyButton = (text, what) => el('button', {
 }, el('span', { class: 'copy-icon', 'aria-hidden': 'true' }), '複製');
 
 function valueBox(text) {
-  const pre = el('pre', { class: 'value', tabindex: '0' }, text);
-  const copySelection = () => {
-    const selection = getSelection();
-    if (!selection || selection.isCollapsed || !selection.rangeCount) return;
-    if (!pre.contains(selection.getRangeAt(0).commonAncestorContainer)) return;
-    const selected = selection.toString();
-    if (selected.trim()) copy(selected, pre.closest('.copy-field'), pre, true);
-  };
-  pre.addEventListener('mouseup', copySelection);
-  pre.addEventListener('keyup', (e) => {
-    if ((e.shiftKey && e.key.startsWith('Arrow')) || e.key === 'Shift') copySelection();
-  });
-  return pre;
+  return el('pre', { class: 'value', tabindex: '0' }, text);
 }
+
+function copySelection() {
+  const selection = getSelection();
+  if (!selection || selection.isCollapsed || !selection.rangeCount) return;
+  const range = selection.getRangeAt(0);
+  const start = range.startContainer;
+  const pre = (start instanceof Element ? start : start.parentElement)?.closest('pre.value');
+  if (!pre) return;
+  let selected = range.toString();
+  if (!pre.contains(range.endContainer)) {
+    const clipped = range.cloneRange();
+    clipped.setEnd(pre, pre.childNodes.length);
+    const text = clipped.toString();
+    if (text.trim() !== selected.trim()) return;
+    selected = text;
+  }
+  if (selected.trim()) copy(selected, pre.closest('.copy-field'), pre, true);
+}
+
+document.addEventListener('mouseup', copySelection);
+document.addEventListener('keyup', (e) => {
+  if ((e.shiftKey && e.key.startsWith('Arrow')) || e.key === 'Shift') copySelection();
+});
 
 function defaultPlatform(host) {
   const hit = state.index.find((p) => p.hosts.some((h) => host === h || host.endsWith(`.${h}`)));

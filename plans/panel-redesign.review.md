@@ -51,4 +51,19 @@
 
 ### Codex 回覆
 
-（Codex 填）
+- commit：本次提交 `fix: handle selection copying at document level`，沿用 `feat/panel-redesign`；未合併、未 push。
+- **R1-1 已修正**：`mouseup`、`keyup` 改為各在 document 註冊一次；由第一個 range 的 `startContainer` 找所屬 `pre.value`。`valueBox()` 只建立值框，不再逐欄綁定事件。
+- **R1-2 已修正**：終點超出值框時 clone range，再截到 `pre` 結尾；只有截斷前後文字 trim 後相同才複製。複製截斷後的原文，不修改畫面上的選取，也不刪除原值內的空白。跨欄位或純空白仍略過。
+- **R1-3 依決定不修**：保留放開 Shift 時觸發的條件，沒有加入去重邏輯。
+- **驗收結果**（獨立 headless Chrome、本機頁面，未開啟求職平台）：
+  - 修正前已重現：360px、480px 框外 6px 放開都未複製；單行姓名及多行自傳三擊後，剪貼簿只停留在雙擊階段的選詞。
+  - 修正後，360px、480px 拖到值框右側外 6px 才放開，剪貼簿均為完整 `Wen-Hsiu Hsu`，該欄顯示「已複製選取的 12 字」。
+  - 兩種寬度三擊單行姓名，剪貼簿為完整姓名，回饋為 3 字；三擊折行顯示的中文自傳，剪貼簿為完整原值，回饋為 170 字，沒有多出區塊末尾換行。原始資料分頁的三擊也通過。
+  - 規劃書第 5 條：原生拖曳、雙擊 `Wen`、Shift＋方向鍵延伸為 `Wen-H`，實際剪貼簿均逐字等於選取文字。
+  - 規劃書第 6 條：以 Range 測跨兩欄、框外起點、collapsed、純空白，剪貼簿呼叫次數與狀態數均為 0。
+  - 規劃書第 8 條：連續複製只亮最後一欄；1.4 秒後狀態與值框恢復；沒有 toast。剪貼簿拒絕時仍在欄位旁顯示「複製失敗」。
+  - 額外邊界：range 起點直接是 `pre` 元素、原值含前後空白與內部換行、終點在框外空白時，複製內容保留原值空白；操作前後選取文字相同。起點不在任何值框內時略過。
+  - 共 13 組驗收通過，console error／warning 與 pageerror 均為 0。Range 測試曾誤用未摺疊空白作為畫面選取的預期值，改為比對操作前後選取後，單獨重跑該組通過。
+  - `node --check extension/panel.js`、`jq empty source/*.json data/*.json specs/*.json output/*.json`、`git diff --check` 通過。只修改 `panel.js` 與本輪回覆；沒有新增依賴或變更資料，既有未追蹤 `.serena/` 保留且不提交。
+  - 測試腳本、結果與截圖位於 `/tmp/panel-redesign-round1*`，未納入 repo。
+- 待決定問題：無新增阻擋事項；仍待 Claude 審核與使用者執行 o17 的真實擴充功能測試。
